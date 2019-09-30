@@ -1,0 +1,50 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "1.4.3",
+    "@types/jest": "24.0.18",
+    "@types/material-ui": "^0.21.7",
+    "@types/node": "12.7.8",
+    "@types/node-sass": "^4.11.0",
+    "@types/react": "16.9.3",
+    "@types/react-dom": "16.9.1",
+    "d3-ease": "1.0.3",
+    "firebase": "5.0.4",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-firebase-file-uploader": "2.4.1",
+    "react-move": "^6.0.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.1.1",
+    "react-scripts": "3.1.2",
+    "typescript": "3.6.3"
+  },
+  "scripts": {
+    "build:css": "node-sass src/Style/style.scss -o src/Style/ ",
+    "watch:css": "npm run build:css && node-sass src/ -o src/ -w -r",
+    "start": "npm-run-all -p watch:css start:js",
+    "start:js": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
