@@ -2,16 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Component/Header_Footer/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/HOC/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Component/UI/icons.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/featured_player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/jersey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/logos/manchester_city_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/Otamendi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/Raheem Sterling col.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/Vincent Kompany col.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/aymeric_laporte.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/benjamin_mendy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/danilo_brabosa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/john_stones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/nicolas_otamendi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/tosin_adarabioyo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/vincent_kompany.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/KEEP/claudio_bravo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/KEEP/ederson_morales.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/bernardo_silva.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/brahim_diaz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/fabian_delph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/fernandinho_luiz_roza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/illkay_gundogan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/kevin_de_bruyne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/leroy_sane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/raheem_sterling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/STRIK/gabriel_jesus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/STRIK/lukas_nmecha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/STRIK/sergio_aguero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/stripes.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Style/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/Header_Footer/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/Header_Footer/Header.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -51,11 +72,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/Style" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/app/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/Style" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569779136337</updated>
       <workItem from="1569779137510" duration="1465000" />
-      <workItem from="1569865594417" duration="3182000" />
+      <workItem from="1569865594417" duration="4945000" />
     </task>
     <servers />
   </component>
