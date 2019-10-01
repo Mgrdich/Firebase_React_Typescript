@@ -1,7 +1,7 @@
 body {
-  margin:0;
-  padding:0;
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Schoolbell', cursive;
 }
 
 a {
@@ -24,8 +24,9 @@ a {
 .img_cover {
   background-size: cover !important;
 }
+
 .container {
-  width:1024px;
+  width: 1024px;
   margin: 0 auto;
 }
 
@@ -35,7 +36,6 @@ input {
   font-size: 17px;
   padding: 8px;
   border-radius: 3px;
-  font-family: Roboto;
   font-weight: 300;
   width: 100%;
   box-sizing: border-box;
@@ -96,14 +96,17 @@ button {
   color: #cecece;
   text-align: center;
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
   color: #cecece;
   text-align: center;
 }
+
 :-ms-input-placeholder { /* IE 10+ */
   color: #cecece;
   text-align: center;
 }
+
 :-moz-placeholder { /* Firefox 18- */
   color: #cecece;
   text-align: center;
@@ -148,8 +151,8 @@ footer {
   padding: 30px 0px;
 }
 
-footer .img_cover{
-  margin:0 auto;
+footer .img_cover {
+  margin: 0 auto;
 }
 
 footer .footer_discl {
@@ -172,6 +175,7 @@ footer .footer_discl {
 .featured_stripes {
   position: relative
 }
+
 .featured_text {
   position: relative;
   font-family: 'Righteous', cursive;
@@ -187,7 +191,7 @@ footer .footer_discl {
 .featured_number {
   font-size: 270px;
   color: #ffffff;
-  transform: translate(260px,170px);
+  transform: translate(260px, 170px);
   position: absolute;
 }
 
@@ -198,6 +202,7 @@ footer .footer_discl {
   background-repeat: no-repeat !important;
   position: absolute;
 }
+
 .featured_first {
   position: absolute;
   background: #0e1731;
@@ -222,7 +227,7 @@ footer .footer_discl {
 
 .home_matches_wrapper {
   background: #98c5e9;
-  margin-top:9px;
+  margin-top: 9px;
   padding: 50px 0px;
 }
 
@@ -238,7 +243,7 @@ footer .footer_discl {
 }
 
 .home_matches_wrapper .home_matches .item .wrapper {
-  padding-right:30px;
+  padding-right: 30px;
 }
 
 
@@ -246,15 +251,16 @@ footer .footer_discl {
             MATCHES BLOCK
 ===============================*/
 
-.match_block .match_date{
-  color:#ffffff;
-  font-size:18px;
+.match_block .match_date {
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .match_block .match_wrapper .match_top,
 .match_block .match_wrapper .match_bottom {
   display: flex;
 }
+
 .match_block .match_wrapper .match_bottom {
   margin-top: 5px;
 }
@@ -270,7 +276,7 @@ footer .footer_discl {
 
 .match_block .match_wrapper .match_top .left div,
 .match_block .match_wrapper .match_bottom .left div {
-  float:left
+  float: left
 }
 
 .match_block .match_wrapper .match_top .left .icon,
@@ -279,6 +285,7 @@ footer .footer_discl {
   height: 50px;
   background-size: cover !important;
 }
+
 .match_block .match_wrapper .match_top .left .team_name,
 .match_block .match_wrapper .match_bottom .left .team_name {
   font-size: 30px;
@@ -297,7 +304,7 @@ footer .footer_discl {
 }
 
 .match_box_big {
-  width:100%;
+  width: 100%;
   border-bottom: 2px solid #98c6e9;
   padding: 20px;
   box-sizing: border-box;
@@ -315,7 +322,7 @@ footer .footer_discl {
   display: flex;
 }
 
-.match_box_big .icon{
+.match_box_big .icon {
   width: 50px;
   height: 50px;
   background-size: cover !important;
@@ -350,11 +357,13 @@ footer .footer_discl {
   border-bottom: 1px solid #01285e;
   background: #dff1ff;
 }
+
 .match_filters .tag {
   font-weight: 300;
   margin-bottom: 5px;
   color: #656565;
 }
+
 .match_filters .option {
   background: #ffffff;
   padding: 5px 9px;
@@ -418,10 +427,11 @@ footer .footer_discl {
   padding: 10px 10px 20px 10px;
   font-family: 'Righteous';
 }
+
 .player_card_wrapper .player_card_thmb {
   border: 1px solid #eeeeee;
-  width:100%;
-  height:250px;
+  width: 100%;
+  height: 250px;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: contain !important;
@@ -430,6 +440,7 @@ footer .footer_discl {
 .player_card_wrapper .player_card_nfo {
   position: relative;
 }
+
 .player_card_wrapper .player_card_number {
   color: #d6ecfe;
   font-size: 185px;
@@ -472,18 +483,19 @@ footer .footer_discl {
   font-size: 150px;
   font-family: 'Righteous', cursive;
   flex-grow: 1;
-  color:#d5ebfd;
+  color: #d5ebfd;
   line-height: 135px;
 }
+
 .promotion_wrapper .promotion_animation .left span {
-  display:block;
+  display: block;
 }
 
 .promotion_wrapper .promotion_animation .right {
   line-height: 135px;
 }
 
-.promotion_wrapper .promotion_animation .right div{
+.promotion_wrapper .promotion_animation .right div {
   width: 280px;
   height: 280px;
   background-size: contain !important;
@@ -530,12 +542,13 @@ footer .footer_discl {
 }
 
 .the_matches_wrapper .right {
-  width:400px;
+  width: 400px;
 }
 
 .league_table_wrapper {
   border-left: 1px solid #98c6e9;
 }
+
 .league_table_wrapper .title {
   padding: 22px;
   font-size: 22px;
@@ -550,15 +563,13 @@ footer .footer_discl {
 }
 
 
-
-
 /*=============================
          ADMIN
 ===============================*/
 
 .admin_container {
   margin-top: 96px;
-  display:flex;
+  display: flex;
 }
 
 .admin_container .admin_left_nav {
@@ -567,10 +578,11 @@ footer .footer_discl {
   border-right: 2px solid #01285e;
 }
 
-.admin_container  .admin_right {
+.admin_container .admin_right {
   flex-grow: 1;
 }
-.admin_container  .admin_progress {
+
+.admin_container .admin_progress {
   text-align: center;
   margin: 20px 0px;
 }
@@ -599,7 +611,7 @@ footer .footer_discl {
 }
 
 
-.select_team_layout .wrapper{
+.select_team_layout .wrapper {
   display: flex;
 }
 
@@ -629,7 +641,7 @@ footer .footer_discl {
   margin-top: 96px;
   padding: 20px;
   background-size: 5px 5px !important;
-  min-height:100vh;
+  min-height: 100vh;
 }
 
 .team_category_wrapper .title {
@@ -643,7 +655,8 @@ footer .footer_discl {
   display: flex;
   flex-wrap: wrap;
 }
-.team_category_wrapper .team_cards .item{
+
+.team_category_wrapper .team_cards .item {
   margin-right: 20px;
   margin-bottom: 20px;
 }

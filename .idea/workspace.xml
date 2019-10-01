@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Component/UI/icons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/featured_player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/jersey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/logos/manchester_city_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/Otamendi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/Raheem Sterling col.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/Vincent Kompany col.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/aymeric_laporte.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/benjamin_mendy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/danilo_brabosa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/john_stones.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/nicolas_otamendi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/tosin_adarabioyo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/DEF/vincent_kompany.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/KEEP/claudio_bravo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/KEEP/ederson_morales.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/bernardo_silva.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/brahim_diaz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/fabian_delph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/fernandinho_luiz_roza.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/illkay_gundogan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/kevin_de_bruyne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/leroy_sane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/MIDF/raheem_sterling.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/STRIK/gabriel_jesus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/STRIK/lukas_nmecha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/players/player_to_upload/STRIK/sergio_aguero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Style/images/stripes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/_fonts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/Header_Footer/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/Header_Footer/Header.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +78,9 @@
       <option name="presentableId" value="Default" />
       <updated>1569779136337</updated>
       <workItem from="1569779137510" duration="1465000" />
-      <workItem from="1569865594417" duration="4945000" />
+      <workItem from="1569865594417" duration="5006000" />
+      <workItem from="1569954641570" duration="15000" />
+      <workItem from="1569954670366" duration="295000" />
     </task>
     <servers />
   </component>
