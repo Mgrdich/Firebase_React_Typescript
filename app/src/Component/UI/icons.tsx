@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import mcitylogo from "../../Style/images/logos/machester_city_logo.png";
+import mcitylogo from "../../Style/images/logos/manchester_city_logo.png";
 
 interface LogoProps {
     linkTo: string;
