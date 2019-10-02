@@ -3,13 +3,16 @@ import {easePolyOut} from "d3-ease";
 import {IStripe} from "../../../Interfaces";
 import StripesData from "../../../JSON/StripesJson.json"
 
-let Animate = require("react-move/Animate");
+let {default: Animate} = require("react-move/Animate");
 
+console.log(Animate);
 const Stripes = () => {
-    let ArrStripes:Array<IStripe> = StripesData;
+    let ArrStripes: Array<IStripe> = StripesData;
 
-    function showStripes():any {
+
+    function showStripes(): any {
         ArrStripes.map((stripe: IStripe, index: number) => {
+            console.log(stripe);
             return (
                 <Animate
                     key={index}
@@ -22,6 +25,7 @@ const Stripes = () => {
                     }}>
                     {
                         ({background}: IStripe) => {
+                            console.log(background);
                             return (
                                 <div
                                     className="stripe"
@@ -39,7 +43,7 @@ const Stripes = () => {
             );
         })
     }
-
+    
     return (
         <div className="featured_stripes">
             {showStripes()}

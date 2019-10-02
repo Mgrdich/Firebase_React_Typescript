@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/JSON/StripesJson.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/featured/Stripes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/featured/Stripes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/featured/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/featured/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +80,7 @@
       <workItem from="1569779137510" duration="1465000" />
       <workItem from="1569865594417" duration="5006000" />
       <workItem from="1569954641570" duration="15000" />
-      <workItem from="1569954670366" duration="4489000" />
+      <workItem from="1569954670366" duration="5519000" />
     </task>
     <servers />
   </component>
