@@ -1,13 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import mcitylogo from "../../Style/images/logos/manchester_city_logo.png";
+import {LogoProps} from "../../Interfaces";
 
-interface LogoProps {
-    linkTo: string;
-    link?: boolean;
-    height: number;
-    width: number;
-}
 
 const CityLogo: React.FC<LogoProps> = ({link, linkTo, width, height}) => {
 
