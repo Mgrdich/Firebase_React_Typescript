@@ -1,5 +1,9 @@
 export interface IStripe {
     background:string;
+    left:number;
+    rotate:number;
+    top:number;
+    delay:number;
 }
 
 export interface LogoProps {
@@ -12,5 +16,5 @@ export interface LogoProps {
 
 
 export interface LayoutProps {
-    children:JSX.Element
+    children:JSX.Element;
 }
