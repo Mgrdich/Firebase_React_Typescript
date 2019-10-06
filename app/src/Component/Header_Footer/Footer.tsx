@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="bck_blue">
             <div className="footer_logo">
-                <CityLogo linkTo="/" height={70} width={70}/>
+                <CityLogo linkTo="/" height={70} width={70} link={true}/>
                 <div className="footer_discl">
                     Manchester city 2018.All rights reserved.
                 </div>

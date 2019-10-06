@@ -8,3 +8,9 @@ export interface LogoProps {
     height: number;
     width: number;
 }
+
+
+
+export interface LayoutProps {
+    children:JSX.Element
+}

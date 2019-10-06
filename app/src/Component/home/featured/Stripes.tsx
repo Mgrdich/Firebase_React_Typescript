@@ -9,8 +9,8 @@ const Stripes = () => {
     let ArrStripes: Array<IStripe> = StripesData;
 
 
-    function showStripes(): any {
-        ArrStripes.map((stripe: IStripe, index: number) => {
+    function showStripes(): Array<JSX.Element> {
+        const Element: Array<JSX.Element> = ArrStripes.map((stripe: IStripe, index: number) => {
 
             return (
                 <Animate
@@ -39,9 +39,11 @@ const Stripes = () => {
                     }
                 </Animate>
             );
-        })
+        });
+        return Element;
     }
-    
+
+
     return (
         <div className="featured_stripes">
             {showStripes()}

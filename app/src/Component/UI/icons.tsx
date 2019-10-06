@@ -10,7 +10,7 @@ const CityLogo: React.FC<LogoProps> = ({link, linkTo, width, height}) => {
                                    style={{width:`${width}px`, height:`${height}px`, background: `url(${mcitylogo}) no-repeat`}}
     >
     </div>;
-    if (Link) {
+    if (link) {
         return (
             <Link to={linkTo} className="link_logo">
                 {Logo}
