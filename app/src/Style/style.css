@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Schoolbell&display=swap");
+/*
+@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');*/
 body {
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@ a {
   background: #0d1831; }
 
 .bck_lblue {
-  background: #98c5e9; }
+  background: $city_colors; }
 
 .img_cover {
   background-size: cover !important; }
@@ -60,7 +61,7 @@ button {
   margin: 10px 0px; }
 
 .success_label {
-  color: #98c5e9;
+  color: $city_colors;
   font-weight: 600;
   margin: 10px 0px; }
 
@@ -192,7 +193,7 @@ footer .footer_discl {
             MATCHES HOME
 ===============================*/
 .home_matches_wrapper {
-  background: #98c5e9;
+  background: $city_colors;
   margin-top: 9px;
   padding: 50px 0px; }
 

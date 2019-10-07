@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {easePolyOut} from "d3-ease";
 import {IStripe} from "../../../Interfaces";
 import StripesData from "../../../JSON/StripesJson.json"
@@ -7,15 +7,9 @@ let {default: Animate} = require("react-move/Animate");
 
 const Stripes = () => {
     let ArrStripes:Array<IStripe> = StripesData;
+/*
     let [stripes,ChangeStripes] = useState<IStripe[]>();
-    /*useEffect(() => {
-        async function fetch() {
-            let str = await StripesData;
-            ChangeStripes(str);
-        }
-        fetch();
-    }, []);
-    */
+*/
     function showStripes(): Array<JSX.Element> {
         const Element: Array<JSX.Element> = ArrStripes.map((stripe: IStripe, index: number) => {
             return (
