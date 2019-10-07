@@ -17,26 +17,26 @@ const Stripes = () => {
                     key={index}
                     show={true}
                     start={{
-                        background: '#ffffff',
+                        backgroundColor: [stripe.background],
                         opacity: 0,
                         left: 0,
                         rotate: 0,
                         top: 0
                     }}
                     enter={{
-                        background: [stripe.background],
+                        backgroundColor: [stripe.background],
                         timing: {delay: stripe.delay, duration: 200, ease: easePolyOut},
                         opacity: [1],
                         left: [stripe.left],
                         rotate: [stripe.rotate],
                         top:[stripe.top]
                     }}>
-                    {({ opacity,left,rotate,top,background}:any)=>{
+                    {({backgroundColor,opacity,left,rotate,top}:any)=>{
                         return(
                             <div
                                 className="stripe"
                                 style={{
-                                    background,
+                                    backgroundColor,
                                     opacity,
                                     transform: `rotate(${rotate}deg) translate(${left}px,${top}px)`
                                 }}
@@ -49,6 +49,7 @@ const Stripes = () => {
         return Element;
     }
 
+    console.log("rendering");
 
     return (
         <div className="featured_stripes">
