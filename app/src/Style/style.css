@@ -1,5 +1,4 @@
-/*
-@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');*/
+@import url("https://fonts.googleapis.com/css?family=Schoolbell&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -52,8 +51,9 @@ button {
   margin-top: 10px;
   font-size: 15px;
   border-radius: 3px; }
-  button span {
-    font-family: inherit; }
+
+button span {
+  font-family: inherit; }
 
 .error_label {
   color: #F44336;

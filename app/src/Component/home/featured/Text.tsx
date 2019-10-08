@@ -2,6 +2,7 @@ import React from 'react';
 import {easePolyOut} from "d3-ease";
 import Animate from "react-move/Animate";
 
+
 const Text:React.FC = () => {
     let animateNumber = function ():JSX.Element {
         return (
@@ -32,9 +33,81 @@ const Text:React.FC = () => {
             </Animate>
         );
     };
+
+    let animateFirst = function ():JSX.Element {
+        return (
+            <Animate
+                show={true}
+                start={{
+                    opacity: [0],
+                    x:503,
+                    y:450
+                }}
+                enter={{
+                    opacity: [1],
+                    x:[273],
+                    y:[450],
+                    timing: {duration: 500, ease: easePolyOut},
+
+                }}
+            >
+                {({opacity,x,y}) => {
+                    return (
+                        <div className="featured_first"
+                             style={{
+                                 transform: `translate(${x}px,${y}px)`,
+                                 opacity,
+                             }}
+                        >
+                            League
+                        </div>
+                    );
+                }}
+            </Animate>
+        );
+
+    };
+    let animateSecond = function ():JSX.Element {
+        return (
+            <Animate
+                show={true}
+                start={{
+                    opacity: [0],
+                    x:503,
+                    y:586
+                }}
+                enter={{
+                    opacity: [1],
+                    x:[273],
+                    y:[586],
+                    timing: {duration: 500, ease: easePolyOut},
+
+                }}
+            >
+                {({opacity,x,y}) => {
+                    return (
+                        <div className="featured_second"
+                             style={{
+                                 transform: `translate(${x}px,${y}px)`,
+                                 opacity,
+                             }}
+                        >
+                            Champions
+                        </div>
+                    );
+                }}
+            </Animate>
+        );
+
+    };
+
+
     return (
         <div className="featured_text">
+            {animateFirst()}
+            {animateSecond()}
             {animateNumber()}
+
         </div>
     );
 };
