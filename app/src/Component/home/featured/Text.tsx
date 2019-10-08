@@ -1,6 +1,7 @@
 import React from 'react';
 import {easePolyOut} from "d3-ease";
 import Animate from "react-move/Animate";
+import FeaturedPlayer from"../../../Style/images/featured_player.png"
 
 
 const Text:React.FC = () => {
@@ -102,11 +103,43 @@ const Text:React.FC = () => {
     };
 
 
+    let animatePlayer = function ():JSX.Element {
+        return (
+            <Animate
+                show={true}
+                start={{
+                    opacity: [0],
+                }}
+                enter={{
+                    opacity: [1],
+                    timing: {duration: 800, ease: easePolyOut},
+
+                }}
+            >
+                {({opacity}) => {
+                    return (
+                        <div className="featured_player"
+                             style={{
+                                 transform: `translate(550px,201px)`,
+                                 opacity,
+                                 background:`url(${FeaturedPlayer})`
+                             }}
+                        >
+                        </div>
+                    );
+                }}
+            </Animate>
+        );
+
+    };
+
     return (
         <div className="featured_text">
+            {animatePlayer()}
             {animateFirst()}
             {animateSecond()}
             {animateNumber()}
+
 
         </div>
     );
