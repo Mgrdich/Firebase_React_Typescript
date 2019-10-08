@@ -35,7 +35,7 @@ const Stripes = () => {
                                 style={{
                                     backgroundColor,
                                     opacity,
-                                    transform: `rotate(${rotate}deg) translate(${left}px,${top}px)`
+                                    transform: `rotate(${rotate}deg) translate(${left}px,${top}px)`,
                                 }}
                             />
                         );

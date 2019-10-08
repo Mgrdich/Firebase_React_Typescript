@@ -2,14 +2,14 @@ import React from 'react';
 import {easePolyOut} from "d3-ease";
 import Animate from "react-move/Animate";
 
-const Text = () => {
-    let animateNumber = function () {
+const Text:React.FC = () => {
+    let animateNumber = function ():JSX.Element {
         return (
             <Animate
                 show={true}
                 start={{
-                    opacity: 0,
-                    rotate: 0
+                    opacity: [0],
+                    rotate:  0
                 }}
                 enter={{
                     opacity: [1],
@@ -18,15 +18,14 @@ const Text = () => {
                 }}
             >
                   {({opacity,rotate}) => {
-                    console.log(rotate);
                     return (
                         <div className="featured_number"
                         style={{
+                            transform: `translate(260px,170px) rotateY(${rotate}deg)`,
                             opacity,
-                            transform:`translate{260px,170px} rotateY(${rotate})`
                         }}
                         >
-                        10
+                        3
                         </div>
                     );
                 }}

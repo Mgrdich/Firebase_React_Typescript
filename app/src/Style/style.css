@@ -16,7 +16,7 @@ a {
   background: #0d1831; }
 
 .bck_lblue {
-  background: $city_colors; }
+  background: #98c5e9; }
 
 .img_cover {
   background-size: cover !important; }
@@ -61,7 +61,7 @@ button {
   margin: 10px 0px; }
 
 .success_label {
-  color: $city_colors;
+  color: #98c5e9;
   font-weight: 600;
   margin: 10px 0px; }
 
@@ -193,7 +193,7 @@ footer .footer_discl {
             MATCHES HOME
 ===============================*/
 .home_matches_wrapper {
-  background: $city_colors;
+  background: #98c5e9;
   margin-top: 9px;
   padding: 50px 0px; }
 
