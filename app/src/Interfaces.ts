@@ -3,7 +3,7 @@ interface Link {
     link?: boolean;
 }
 interface ReactChildren {
-    children:JSX.Element;
+    children:JSX.Element | string | number;
 }
 export interface IStripe {
     background:string;
@@ -24,7 +24,7 @@ export interface LayoutProps extends ReactChildren {
 
 }
 
-export interface ITags extends Link{
+export interface ITags extends Link,ReactChildren{
     bck:string;
     size:string;
     color:string;

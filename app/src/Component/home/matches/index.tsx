@@ -3,7 +3,7 @@ import Tag from "../../UI/misc";
 
 const MatchesHome:React.FC = () => {
     return (
-        <div className="home_card_wrapper">
+        <div className="home_matches_wrapper">
             <div className="container">
                 <Tag
                     bck="#0e1731"

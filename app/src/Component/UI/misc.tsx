@@ -10,7 +10,7 @@ const Tag: React.FC<ITags> = (props) => {
         padding: '5px 10px',
         display: 'inline-block',
             ...props.add
-    }}> </div>;
+    }}>{props.children} </div>;
 
     if (props.link) {
         return (
