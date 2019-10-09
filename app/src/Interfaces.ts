@@ -1,3 +1,10 @@
+interface Link {
+    linkTo: string;
+    link?: boolean;
+}
+interface ReactChildren {
+    children:JSX.Element;
+}
 export interface IStripe {
     background:string;
     left:number;
@@ -6,15 +13,20 @@ export interface IStripe {
     delay:number;
 }
 
-export interface LogoProps {
-    linkTo: string;
-    link?: boolean;
+export interface LogoProps extends Link{
     height: number;
     width: number;
 }
 
 
 
-export interface LayoutProps {
-    children:JSX.Element;
+export interface LayoutProps extends ReactChildren {
+
+}
+
+export interface ITags extends Link{
+    bck:string;
+    size:string;
+    color:string;
+    add?:any;
 }
