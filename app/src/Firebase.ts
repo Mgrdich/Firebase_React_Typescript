@@ -15,3 +15,9 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+
+const firebaseDB = firebase.database();
+
+firebaseDB.ref('matches').once('value').then((data)=>{
+    console.log(data.val());
+});
