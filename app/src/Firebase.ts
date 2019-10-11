@@ -18,14 +18,12 @@ firebase.initializeApp(firebaseConfig);
 
 const firebaseDB = firebase.database();
 
-/*
 firebaseDB.ref('matches').once('value').then((data)=>{
     console.log(data.val());
-});*/
+});
 const firebaseMatches = firebaseDB.ref('matches');
 
 export {
     firebase,
     firebaseMatches,
-
 }

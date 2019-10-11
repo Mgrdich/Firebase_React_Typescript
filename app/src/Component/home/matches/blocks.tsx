@@ -6,9 +6,10 @@ import MathcesBlock from "../../UI/mathces_block";
 
 const Blocks = () => {
     const [matches, changeMatches] = useState<Array<any>>([]);
+
     useEffect(() => {
-        firebaseMatches.limitToLast(6).once('value').then((snapshot) => {
-            changeMatches(firebaseLooper(snapshot).reverse());
+        firebaseMatches.limitToLast(6).once('value').then((data)=>{
+           changeMatches(firebaseLooper(data.val()));
         })
     }, []);
     const showMatches = function (matches: any): JSX.Element {
@@ -23,7 +24,7 @@ const Blocks = () => {
 
         });
     };
-
+    console.log(matches);
     return (
         <div>
             {(matches.length) ? showMatches(matches) : <ClipLoader color="#0d1831" size={150} sizeUnit="px"/>}
