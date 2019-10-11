@@ -1,5 +1,6 @@
 import React from 'react';
 import Tag from "../../UI/misc";
+import Blocks from "./blocks";
 
 const MatchesHome:React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const MatchesHome:React.FC = () => {
                     size="50px"
                     linkTo=""
                 >Mathces</Tag>
+                <Blocks/>
                 <Tag
                 bck="#ffffff"
                 size="22px"

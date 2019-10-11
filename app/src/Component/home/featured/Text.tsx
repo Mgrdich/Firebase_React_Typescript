@@ -139,8 +139,6 @@ const Text:React.FC = () => {
             {animateFirst()}
             {animateSecond()}
             {animateNumber()}
-
-
         </div>
     );
 };
