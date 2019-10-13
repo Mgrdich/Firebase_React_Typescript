@@ -4,29 +4,32 @@ import {firebaseLooper} from "../../../utilities/funcions";
 import ClipLoader from 'react-spinners/ClipLoader';
 import MathcesBlock from "../../UI/mathces_block";
 
+const Slide = require('react-reveal/Slide');
+
 const Blocks = () => {
     const [matches, changeMatches] = useState<Array<any>>([]);
 
     useEffect(() => {
-        firebaseMatches.limitToLast(6).once('value').then((data)=>{
-           changeMatches(firebaseLooper(data.val()).reverse());
+        firebaseMatches.limitToLast(6).once('value').then((data) => {
+            changeMatches(firebaseLooper(data.val()).reverse());
         })
     }, []);
     const showMatches = function (matches: any): JSX.Element {
-        return matches.map((match:any) => {
+        return matches.map((match: any) => {
             return (
-                <div className="item" key={match.id}>
-                    <div className="wrapper">
-                        <MathcesBlock match={match}/>
+                <Slide bottom key={match.id}>
+                    <div className="item">
+                        <div className="wrapper">
+                            <MathcesBlock match={match}/>
+                        </div>
                     </div>
-                </div>
+                </Slide>
             );
 
         });
     };
-    console.log(matches);
     return (
-        <div>
+        <div className="home_matches">
             {(matches.length) ? showMatches(matches) : <ClipLoader color="#0d1831" size={150} sizeUnit="px"/>}
         </div>
     );
