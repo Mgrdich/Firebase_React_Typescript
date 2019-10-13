@@ -9,14 +9,13 @@ const Blocks = () => {
 
     useEffect(() => {
         firebaseMatches.limitToLast(6).once('value').then((data)=>{
-            console.log(firebaseLooper(data.val()));
-           changeMatches(firebaseLooper(data.val()));
+           changeMatches(firebaseLooper(data.val()).reverse());
         })
     }, []);
     const showMatches = function (matches: any): JSX.Element {
         return matches.map((match:any) => {
             return (
-                <div className="item">
+                <div className="item" key={match.id}>
                     <div className="wrapper">
                         <MathcesBlock match={match}/>
                     </div>

@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/arsenal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/bournemouth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/brighton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/burnley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/cardiff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/chelsea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/crystal_palace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/everton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/fulham.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/huddersfield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/leicester.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/liverpool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/manchesr_united.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/manchester_city.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/newcastle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/southampton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/tottenham.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/watford.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/west_ham.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Style/images/team_icons/wolverhampton.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/UI/mathces_block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/UI/mathces_block.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/matches/blocks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/matches/blocks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Firebase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/utilities/funcions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/utilities/funcions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Style/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Style/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +67,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/Style" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/Style/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -54,6 +75,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/Style/images" />
       <recent name="$PROJECT_DIR$/app/src/Style" />
     </key>
   </component>
@@ -92,7 +114,7 @@
       <workItem from="1570649463337" duration="1737000" />
       <workItem from="1570732160766" duration="2507000" />
       <workItem from="1570819683477" duration="5960000" />
-      <workItem from="1570957962646" duration="1817000" />
+      <workItem from="1570957962646" duration="3850000" />
     </task>
     <servers />
   </component>
