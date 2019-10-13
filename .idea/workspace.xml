@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/matches/blocks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/matches/blocks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Firebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/utilities/funcions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/utilities/funcions.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +91,8 @@
       <workItem from="1570644927167" duration="2641000" />
       <workItem from="1570649463337" duration="1737000" />
       <workItem from="1570732160766" duration="2507000" />
-      <workItem from="1570819683477" duration="5269000" />
+      <workItem from="1570819683477" duration="5960000" />
+      <workItem from="1570957962646" duration="1817000" />
     </task>
     <servers />
   </component>

@@ -9,6 +9,7 @@ const Blocks = () => {
 
     useEffect(() => {
         firebaseMatches.limitToLast(6).once('value').then((data)=>{
+            console.log(firebaseLooper(data.val()));
            changeMatches(firebaseLooper(data.val()));
         })
     }, []);
