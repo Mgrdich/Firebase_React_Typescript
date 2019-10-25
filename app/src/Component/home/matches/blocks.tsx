@@ -11,8 +11,7 @@ const Blocks = () => {
 
     useEffect(() => {
         firebaseMatches.limitToLast(6).once('value').then((data) => {
-            changeMatches(firebaseLooper(data.val()).reverse());
-        })
+         })
     }, []);
     const showMatches = function (matches: any): JSX.Element {
         return matches.map((match: any) => {

@@ -59,9 +59,8 @@ button {
   margin-top: 10px;
   font-size: 15px;
   border-radius: 3px; }
-
-button span {
-  font-family: inherit; }
+  button span {
+    font-family: inherit; }
 
 .error_label {
   color: #F44336;
