@@ -52,7 +52,7 @@ const Index: React.FC = () => {
                             </Tag>
                         </div>
                         <div>
-                            <Tag bck="#ffffff" size="27px" color="#0e1731" linkTo="">
+                            <Tag bck="#ffffff" size="27px" color="#0e1731" linkTo="/the_team" link={true} add={{pointer:"cursor"}}>
                                 Meet them here
                             </Tag>
                         </div>
