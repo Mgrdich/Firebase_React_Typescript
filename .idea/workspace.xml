@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/JSON/TagsJsonMeetPlayer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/utilities/variables.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/UI/mathces_block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/UI/mathces_block.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/matches/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/matches/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -96,7 +100,7 @@
       <workItem from="1570981906539" duration="2045000" />
       <workItem from="1571504657939" duration="8000" />
       <workItem from="1572029965116" duration="1985000" />
-      <workItem from="1572186861284" duration="5120000" />
+      <workItem from="1572186861284" duration="6815000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,20 @@
 import React from 'react';
 import Stripes from "../../../Style/images/stripes.png";
 import {Tag} from "../../UI/misc";
+import {MainColor, WhiteColor} from "../../../utilities/variables";
+import JsonData from "../../../JSON/TagsJsonMeetPlayer.json"
 
 const Index: React.FC = () => {
+    function listTags(data:Array<any>):Array<JSX.Element> {
+        return (data.map((item:any,index:number)=>{
+          return (
+              <Tag bck={item.bck} size={item.size} color={item.color} linkTo="" add={{...item.add}}>
+                {item.content}
+            </Tag>
+          )
+        }));
+    }
+
     return (
         <div className="home_meetplayers"
              style={{background: `#ffffff url(${Stripes})`}}
@@ -14,45 +26,12 @@ const Index: React.FC = () => {
                     </div>
                     <div className="home_text_wrapper">
                         <div>
-                            <Tag
-                                bck="#0e1731"
-                                size="90px"
-                                color="#ffffff"
-                                linkTo=""
-                                add={{
-                                    display: 'inline-block',
-                                    marginBottom: '20px'
-                                }}
-                            >
-                                Meet
-                            </Tag>
-                            <Tag
-                                bck="#0e1731"
-                                size="90px"
-                                color="#ffffff"
-                                linkTo=""
-                                add={{
-                                    display: 'inline-block',
-                                    marginBottom: '20px'
-                                }}
-                            >
-                                The
-                            </Tag>
-                            <Tag
-                                bck="#0e1731"
-                                size="90px"
-                                color="#ffffff"
-                                linkTo=""
-                                add={{
-                                    display: 'inline-block',
-                                    marginBottom: '20px'
-                                }}
-                            >
-                                Players
-                            </Tag>
+                            {
+                                listTags(JsonData)
+                            }
                         </div>
                         <div>
-                            <Tag bck="#ffffff" size="27px" color="#0e1731" linkTo="/the_team" link={true} add={{pointer:"cursor"}}>
+                            <Tag bck={WhiteColor} size="27px" color={MainColor} linkTo="/the_team" link={true} add={{pointer:"cursor"}}>
                                 Meet them here
                             </Tag>
                         </div>

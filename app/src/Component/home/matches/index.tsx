@@ -1,22 +1,23 @@
 import React from 'react';
 import {Tag} from "../../UI/misc";
 import Blocks from "./blocks";
+import {MainColor,WhiteColor} from "../../../utilities/variables";
 
 const MatchesHome:React.FC = () => {
     return (
         <div className="home_matches_wrapper">
             <div className="container">
                 <Tag
-                    bck="#0e1731"
-                    color="#ffffff"
+                    bck={MainColor}
+                    color={WhiteColor}
                     size="50px"
                     linkTo=""
                 >Mathces</Tag>
                 <Blocks/>
                 <Tag
-                bck="#ffffff"
+                bck={WhiteColor}
                 size="22px"
-                color="#0e1731"
+                color={MainColor}
                 link={true}
                 linkTo="/the_team"
                 >

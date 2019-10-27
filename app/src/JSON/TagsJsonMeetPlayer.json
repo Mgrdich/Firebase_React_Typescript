@@ -1,0 +1,32 @@
+[
+  {
+    "bck": "#0e1731",
+    "size": "90px",
+    "color": "#ffffff",
+    "content": "Meet",
+    "add": {
+      "display": "inline-block",
+      "marginBottom": "20px"
+    }
+  },
+  {
+    "bck": "#0e1731",
+    "size": "90px",
+    "color": "#ffffff",
+    "content": "The",
+    "add": {
+      "display": "inline-block",
+      "marginBottom": "20px"
+    }
+  },
+  {
+    "bck": "#0e1731",
+    "size": "90px",
+    "color": "#ffffff",
+    "content": "Players",
+    "add": {
+      "display": "inline-block",
+      "marginBottom": "20px"
+    }
+  }
+]
