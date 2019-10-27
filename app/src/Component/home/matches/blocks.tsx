@@ -10,9 +10,11 @@ const Blocks = () => {
     const [matches, changeMatches] = useState<Array<any>>([]);
 
     useEffect(() => {
-        firebaseMatches.limitToLast(6).once('value').then((data) => {
-            console.log(data);
-         })
+        firebaseMatches.limitToLast(6).once('value').then((snapshot)=>{
+            console.log(snapshot.val());
+            const matches = firebaseLooper(snapshot.val());
+            changeMatches(matches);
+        })
     }, []);
     const showMatches = function (matches: any): JSX.Element {
         return matches.map((match: any) => {
