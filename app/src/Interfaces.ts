@@ -30,3 +30,11 @@ export interface ITags extends Link,ReactChildren{
     color:string;
     add?:any;
 }
+
+export interface ITagsJson {
+    bck:string;
+    size:string;
+    color:string;
+    content:string;
+    add:any
+}

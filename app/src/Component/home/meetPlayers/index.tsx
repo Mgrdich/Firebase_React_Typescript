@@ -3,12 +3,13 @@ import Stripes from "../../../Style/images/stripes.png";
 import {Tag} from "../../UI/misc";
 import {MainColor, WhiteColor} from "../../../utilities/variables";
 import JsonData from "../../../JSON/TagsJsonMeetPlayer.json"
+import {ITagsJson} from "../../../Interfaces";
 
 const Index: React.FC = () => {
-    function listTags(data:Array<any>):Array<JSX.Element> {
-        return (data.map((item:any,index:number)=>{
+    function listTags(data:Array<ITagsJson>):Array<JSX.Element> {
+        return (data.map((item:ITagsJson,index:number)=>{
           return (
-              <Tag bck={item.bck} size={item.size} color={item.color} linkTo="" add={{...item.add}}>
+              <Tag bck={item.bck} size={item.size} color={item.color} linkTo="" add={{...item.add}} key={index}>
                 {item.content}
             </Tag>
           )
