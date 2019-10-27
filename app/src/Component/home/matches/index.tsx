@@ -1,5 +1,5 @@
 import React from 'react';
-import Tag from "../../UI/misc";
+import {Tag} from "../../UI/misc";
 import Blocks from "./blocks";
 
 const MatchesHome:React.FC = () => {

@@ -11,6 +11,7 @@ const Blocks = () => {
 
     useEffect(() => {
         firebaseMatches.limitToLast(6).once('value').then((data) => {
+            console.log(data);
          })
     }, []);
     const showMatches = function (matches: any): JSX.Element {
