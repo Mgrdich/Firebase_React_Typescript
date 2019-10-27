@@ -11,7 +11,6 @@ const Blocks = () => {
 
     useEffect(() => {
         firebaseMatches.limitToLast(6).once('value').then((snapshot)=>{
-            console.log(snapshot.val());
             const matches = firebaseLooper(snapshot.val());
             changeMatches(matches);
         })
