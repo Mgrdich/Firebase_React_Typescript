@@ -4,6 +4,7 @@ import {Tag} from "../../UI/misc";
 import {MainColor, WhiteColor} from "../../../utilities/variables";
 import JsonData from "../../../JSON/TagsJsonMeetPlayer.json"
 import {ITagsJson} from "../../../Interfaces";
+import HomeCards from "./cards";
 
 const Reveal = require("react-reveal/Reveal");
 
@@ -31,7 +32,9 @@ const MeetThePlayer: React.FC = () => {
             <div className="container">
                 <div className="home_meetplayers_wrapper">
                     <div className="home_card_wrapper">
-                        card
+                       <HomeCards
+                       show={show}
+                       />
                     </div>
                     <div className="home_text_wrapper">
                         <div>
