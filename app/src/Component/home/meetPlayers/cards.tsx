@@ -1,6 +1,11 @@
 import React from 'react';
+import {easePolyOut} from "d3-ease";
+import Animate from "react-move/Animate";
+import Otamendi from "../../../Style/images/players/Otamendi.png"
 
-const Cards = () => {
+
+const HomeCards:React.FC = () => {
+
     return (
         <div>
             
@@ -8,4 +13,4 @@ const Cards = () => {
     );
 };
 
-export default Cards;
+export default HomeCards;

@@ -7,8 +7,7 @@ import {LogoProps} from "../../Interfaces";
 const CityLogo: React.FC<LogoProps> = ({link, linkTo, width, height}) => {
 
     const Logo: JSX.Element = <div className="img_cover"
-                                   style={{width:`${width}px`, height:`${height}px`, background: `url(${mcitylogo}) no-repeat`}}
-    >
+                                   style={{width:`${width}px`, height:`${height}px`, background: `url(${mcitylogo}) no-repeat`}}>
     </div>;
     if (link) {
         return (

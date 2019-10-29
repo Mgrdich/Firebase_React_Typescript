@@ -1,22 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Stripes from "../../../Style/images/stripes.png";
 import {Tag} from "../../UI/misc";
 import {MainColor, WhiteColor} from "../../../utilities/variables";
 import JsonData from "../../../JSON/TagsJsonMeetPlayer.json"
 import {ITagsJson} from "../../../Interfaces";
 
-const Index: React.FC = () => {
-    function listTags(data:Array<ITagsJson>):Array<JSX.Element> {
-        return (data.map((item:ITagsJson,index:number)=>{
-          return (
-              <Tag bck={item.bck} size={item.size} color={item.color} linkTo="" add={{...item.add}} key={index}>
-                {item.content}
-            </Tag>
-          )
+const Reveal = require("react-reveal/Reveal");
+
+const MeetThePlayer: React.FC = () => {
+    const [show,changeShow] = useState<boolean>(false);
+    function listTags(data: Array<ITagsJson>): Array<JSX.Element> {
+        return (data.map((item: ITagsJson, index: number) => {
+            return (
+                <Tag bck={item.bck} size={item.size} color={item.color} linkTo="" add={{...item.add}} key={index}>
+                    {item.content}
+                </Tag>
+            )
         }));
     }
 
+    console.log(Reveal);
     return (
+        <Reveal
+        onReveal={()=> {changeShow(true);} }
+        fraction={0.7}
+        >
         <div className="home_meetplayers"
              style={{background: `#ffffff url(${Stripes})`}}
         >
@@ -32,7 +40,8 @@ const Index: React.FC = () => {
                             }
                         </div>
                         <div>
-                            <Tag bck={WhiteColor} size="27px" color={MainColor} linkTo="/the_team" link={true} add={{pointer:"cursor"}}>
+                            <Tag bck={WhiteColor} size="27px" color={MainColor} linkTo="/the_team" link={true}
+                                 add={{pointer: "cursor", fontWeight: 500}}>
                                 Meet them here
                             </Tag>
                         </div>
@@ -40,7 +49,8 @@ const Index: React.FC = () => {
                 </div>
             </div>
         </div>
+        </Reveal>
     );
 };
 
-export default Index;
+export default MeetThePlayer;
