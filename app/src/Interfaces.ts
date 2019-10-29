@@ -44,3 +44,11 @@ export interface IcardsAnimate {
     left: number;
     bottom: number;
 }
+
+
+export interface IPlayerProps {
+    number:string;
+    name:string;
+    lastname:string;
+    bck:string;
+}

@@ -1,8 +1,10 @@
 import React from 'react';
+import Matc from "../../Style/images/team_icons/arsenal.png"
 
 
 const MathcesBlock = (props: any) => {
     const {match} = props;
+    console.log(Matc);
     return (
         <div className="match_block">
             <div className="match_date">
@@ -14,7 +16,7 @@ const MathcesBlock = (props: any) => {
                 <div className="match_top">
                     <div className="left">
                         <div className="icon" style={{
-                            backgroundImage: `url("Style/images/team_icons/${match.localThmb}.png)  no-repeat center center`
+                            background: `url(${Matc})  no-repeat center center`
                         }}>
                         </div>
                         <div className="team_name">{match.local}</div>
@@ -27,7 +29,7 @@ const MathcesBlock = (props: any) => {
                 <div className="match_bottom">
                     <div className="left">
                         <div className="icon" style={{
-                            backgroundImage: `Style/images/team_icons/${match.localThmb}.png)  no-repeat center center`
+                            background: `url(${Matc})  no-repeat center center`
                         }}>
                         </div>
                         <div className="team_name">{match.away}</div>

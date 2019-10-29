@@ -4,6 +4,7 @@ import Animate from "react-move/Animate";
 import Otamendi from "../../../Style/images/players/Otamendi.png";
 import meetThePlayersArray from "../../../JSON/meetThePlayers.json"
 import {IcardsAnimate} from "../../../Interfaces";
+import PlayerCard from "../../UI/PlayerCard";
 
 interface IHomeCard {
     show: boolean;
@@ -39,7 +40,13 @@ const HomeCards: React.FC<IHomeCard> = (props) => {
                                 left,
                                 bottom
                             }}
-                            >div
+                            >
+                            <PlayerCard
+                            number="30"
+                            name="Nicholos"
+                            lastname="Otamendi"
+                            bck={Otamendi}
+                            />
                             </div>
                         );
                     }}
