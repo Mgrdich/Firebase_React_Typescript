@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Component/UI/PlayerCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/animation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/UI/mathces_block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/UI/mathces_block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/cards.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -101,7 +103,11 @@
       <workItem from="1572029965116" duration="1985000" />
       <workItem from="1572186861284" duration="6952000" />
       <workItem from="1572293322173" duration="599000" />
-      <workItem from="1572378508256" duration="4768000" />
+      <workItem from="1572378508256" duration="4815000" />
+      <workItem from="1572553942372" duration="747000" />
+      <workItem from="1572716766344" duration="184000" />
+      <workItem from="1572716962937" duration="971000" />
+      <workItem from="1572773511797" duration="2879000" />
     </task>
     <servers />
   </component>

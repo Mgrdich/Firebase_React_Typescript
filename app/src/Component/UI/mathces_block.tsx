@@ -4,7 +4,6 @@ import Matc from "../../Style/images/team_icons/arsenal.png"
 
 const MathcesBlock = (props: any) => {
     const {match} = props;
-    console.log(Matc);
     return (
         <div className="match_block">
             <div className="match_date">

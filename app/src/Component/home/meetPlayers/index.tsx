@@ -20,7 +20,6 @@ const MeetThePlayer: React.FC = () => {
         }));
     }
 
-    console.log(Reveal);
     return (
         <Reveal
         onReveal={()=> {changeShow(true);} }
