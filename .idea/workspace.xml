@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/animation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/UI/mathces_block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/UI/mathces_block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/animation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/animation.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +103,7 @@
       <workItem from="1572553942372" duration="747000" />
       <workItem from="1572716766344" duration="184000" />
       <workItem from="1572716962937" duration="971000" />
-      <workItem from="1572773511797" duration="2879000" />
+      <workItem from="1572773511797" duration="3690000" />
     </task>
     <servers />
   </component>
