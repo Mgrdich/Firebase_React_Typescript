@@ -47,8 +47,33 @@ export interface IcardsAnimate {
 
 
 export interface IPlayerProps {
-    number:string;
-    name:string;
-    lastname:string;
-    bck:string;
+    number: string;
+    name: string;
+    lastname: string;
+    bck: string;
+}
+
+
+/*--------------------------------------------------------------*/
+
+export interface IFormData {
+    element: string; //check later for only two values
+    value: string;
+    config: {
+        name: string;
+        type: string;
+        placeholder: string;
+    },
+    validation: {
+        required: boolean;
+        email: boolean;
+    },
+    valid: boolean;
+    validationMessage: string;
+
+}
+
+export interface IFormFields {
+    id: string;
+    formData: IFormData;
 }
