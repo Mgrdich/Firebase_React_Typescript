@@ -3,40 +3,53 @@ import FormFields from "../../UI/FormFields";
 
 const Fade = require("react-reveal/Fade");
 
+type elementType = {
+    event:Event;
+    id:string;
+}
 const Enroll = () => {
-    const [formMsg,ChangeFormMsg] = useState({
-       formError:false,
-       formSuccess:'',
+    const [formMsg, ChangeFormMsg] = useState({
+        formError: false,
+        formSuccess: '',
     });
-    const [formData,ChangeFormData] = useState({
-        email:{
-            element:'input',
-            value:'',
-            config:{
-                name:'email_input',
-                type:'email',
-                placeholder:'Enter you email'
+    const [formData, ChangeFormData] = useState({
+        email: {
+            element: 'input',
+            value: '',
+            config: {
+                name: 'email_input',
+                type: 'email',
+                placeholder: 'Enter you email'
             },
-            validation:{
-                required:true,
-                email:true
+            validation: {
+                required: true,
+                email: true
             },
-            valid:false,
-            validationMessage:''
+            valid: false,
+            validationMessage: ''
         }
     });
-    function submitForm(event:FormEvent) {
+
+    function submitForm(event: FormEvent) {
 
     }
-     return (
+
+    function updateForm(element:elementType) {
+        console.log(element);
+    }
+    return (
         <Fade>
             <div className="enroll_wrapper">
                 <form onSubmit={(event => submitForm(event))} action="">
-                <div className="enroll_title">
-                    Enter your email
-                </div>
+                    <div className="enroll_title">
+                        Enter your email
+                    </div>
                     <div className="enroll_input">
-                    <FormFields/>
+                        <FormFields
+                            formData={formData.email}
+                            id="promotion"
+                            change={(element:elementType)=>updateForm(element)}
+                        />
                     </div>
                 </form>
             </div>

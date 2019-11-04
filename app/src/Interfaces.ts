@@ -76,4 +76,5 @@ export interface IFormData {
 export interface IFormFields {
     id: string;
     formData: IFormData;
+    change:any;
 }
