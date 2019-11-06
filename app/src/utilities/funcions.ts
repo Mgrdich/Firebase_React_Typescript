@@ -5,3 +5,7 @@ export const firebaseLooper = (snapshot: any): Array<any> => {
         return acc;
     }, []);
 };
+
+export function deepCopyClone(objectToClone: Array<any> | Object) {
+    return JSON.parse(JSON.stringify(objectToClone));
+}

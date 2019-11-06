@@ -1,5 +1,6 @@
 import React, {FormEvent, useState} from 'react';
 import FormFields from "../../UI/FormFields";
+import {deepCopyClone} from "../../../utilities/funcions";
 
 const Fade = require("react-reveal/Fade");
 
@@ -35,7 +36,17 @@ const Enroll = () => {
     }
 
     function updateForm(element:elementType) {
-        console.log(element);
+        // const newFormData = {...formData};
+        //not effective in this case but for future is important
+        const newFormData = deepCopyClone(formData);
+        const newElement = {...newFormData[element.id]};
+
+        // @ts-ignore //check it later
+        newElement.value = element.event.target.value;
+
+        newFormData[element.id] = newElement;
+        console.log(newFormData);
+        ChangeFormData(newFormData);
     }
     return (
         <Fade>
