@@ -77,11 +77,11 @@ export interface IFormFields {
     id: string;
     change: any;
     formDataConfig:IInputInfo;
+    value:string;
 }
 
 export interface IInputInfo {
     element: string;
-    value: string;
     config: {
         name: string;
         type: string;

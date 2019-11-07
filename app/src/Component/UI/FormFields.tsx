@@ -2,7 +2,7 @@ import React from 'react';
 import {IFormFields, IInputInfo} from "../../Interfaces";
 import {IFormData} from "../../Interfaces";
 
-const FormFields: React.FC<IFormFields> = ({formDataConfig, id, change}): JSX.Element => {
+const FormFields: React.FC<IFormFields> = ({formDataConfig, id, change,value}): JSX.Element => {
 
     function renderTemplate(frmData: IInputInfo) {
         let formTemplate: JSX.Element | null = null;
@@ -12,7 +12,7 @@ const FormFields: React.FC<IFormFields> = ({formDataConfig, id, change}): JSX.El
                     <div>
                         <input
                             {...frmData.config}
-                            value={frmData.value}
+                            value={value}
                             onChange={(event => change({event, id}))}
                         />
                     </div>

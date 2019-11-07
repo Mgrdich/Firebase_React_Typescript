@@ -16,7 +16,6 @@ const Enroll = () => {
 
     let objInput = {
         element:"input",
-        value:"",
         config:{
             name: 'email_input',
             type: 'email',
@@ -28,7 +27,7 @@ const Enroll = () => {
     return (
         <Fade>
             <div className="enroll_wrapper">
-                <form onSubmit={(event => submitForm(event))} action="">
+                <form onSubmit={(event)=>handleSubmit(event)} action="">
                     <div className="enroll_title">
                         Enter your email
                     </div>
@@ -37,6 +36,7 @@ const Enroll = () => {
                             formDataConfig={objInput}
                             id="promotion"
                             change={handleChange}
+                            value={values||values.email_input || ''}
                         />
                     </div>
                 </form>

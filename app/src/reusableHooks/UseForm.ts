@@ -1,4 +1,4 @@
-import {BaseSyntheticEvent, useEffect, useState} from "react";
+import {BaseSyntheticEvent, FormEvent, useEffect, useState} from "react";
 
 export function useForm(callback?: any, validate?:any) {
 
@@ -12,7 +12,7 @@ export function useForm(callback?: any, validate?:any) {
         }
     }, [errors]);
 
-    const handleSubmit = (event: Event) => {
+    const handleSubmit = (event: FormEvent) => {
         if (event) event.preventDefault();
         setIsSubmitting(true);
         setErrors(validate(values));
