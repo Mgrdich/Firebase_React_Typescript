@@ -74,7 +74,7 @@ export interface IFormData {
 }
 
 export interface IFormFields {
-    id: string;
+    id?: string;
     change: any;
     formDataConfig:IInputInfo;
     value:string;
