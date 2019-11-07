@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/UI/FormFields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/UI/FormFields.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/utilities/funcions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/utilities/funcions.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -49,6 +50,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/app/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -105,7 +107,8 @@
       <workItem from="1572716962937" duration="971000" />
       <workItem from="1572773511797" duration="4883000" />
       <workItem from="1572890321747" duration="3027000" />
-      <workItem from="1573041253563" duration="1621000" />
+      <workItem from="1573041253563" duration="2171000" />
+      <workItem from="1573147675968" duration="3081000" />
     </task>
     <servers />
   </component>

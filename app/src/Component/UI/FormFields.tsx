@@ -26,9 +26,9 @@ const FormFields: React.FC<IFormFields> = ({formData, id, change}): JSX.Element 
     }
 
     return (
-        <div>
+        <>
             {renderTemplate(formData)}
-        </div>
+        </>
     );
 };
 

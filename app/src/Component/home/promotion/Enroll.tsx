@@ -44,9 +44,12 @@ const Enroll = () => {
         // @ts-ignore //check it later
         newElement.value = element.event.target.value;
 
-        newFormData[element.id] = newElement;
+        console.log(element.id);
+
+        // newFormData[element.id] = newElement;
+        newFormData.value = newElement.value;
         console.log(newFormData);
-        ChangeFormData(newFormData);
+        // ChangeFormData(...newFormData);
     }
     return (
         <Fade>
