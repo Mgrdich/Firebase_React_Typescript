@@ -1,9 +1,10 @@
 import React from 'react';
-import {IFormFields} from "../../Interfaces";
+import {IFormFields, IInputInfo} from "../../Interfaces";
 import {IFormData} from "../../Interfaces";
 
-const FormFields: React.FC<IFormFields> = ({formData, id, change}): JSX.Element => {
-    function renderTemplate(frmData: IFormData) {
+const FormFields: React.FC<IFormFields> = ({formDataConfig, id, change}): JSX.Element => {
+
+    function renderTemplate(frmData: IInputInfo) {
         let formTemplate: JSX.Element | null = null;
         switch (frmData.element) {
             case ("input"): {
@@ -25,9 +26,10 @@ const FormFields: React.FC<IFormFields> = ({formData, id, change}): JSX.Element 
         return formTemplate;
     }
 
+
     return (
         <>
-            {renderTemplate(formData)}
+            {renderTemplate(formDataConfig)}
         </>
     );
 };

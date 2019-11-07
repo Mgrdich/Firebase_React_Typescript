@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/UI/FormFields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/UI/FormFields.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +109,7 @@
       <workItem from="1572773511797" duration="4883000" />
       <workItem from="1572890321747" duration="3027000" />
       <workItem from="1573041253563" duration="2171000" />
-      <workItem from="1573147675968" duration="3081000" />
+      <workItem from="1573147675968" duration="4233000" />
     </task>
     <servers />
   </component>

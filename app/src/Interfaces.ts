@@ -75,6 +75,16 @@ export interface IFormData {
 
 export interface IFormFields {
     id: string;
-    formData: IFormData;
-    change:any;
+    change: any;
+    formDataConfig:IInputInfo;
+}
+
+export interface IInputInfo {
+    element: string;
+    value: string;
+    config: {
+        name: string;
+        type: string;
+        placeholder: string;
+    }
 }

@@ -1,6 +1,7 @@
 import React, {FormEvent, useState} from 'react';
 import FormFields from "../../UI/FormFields";
 import {deepCopyClone} from "../../../utilities/funcions";
+import {useForm} from "../../../reusableHooks/UseForm";
 
 const Fade = require("react-reveal/Fade");
 
@@ -9,48 +10,21 @@ type elementType = {
     id:string;
 }
 const Enroll = () => {
-    const [formMsg, ChangeFormMsg] = useState({
-        formError: false,
-        formSuccess: '',
-    });
-    const [formData, ChangeFormData] = useState({
-        email: {
-            element: 'input',
-            value: '',
-            config: {
-                name: 'email_input',
-                type: 'email',
-                placeholder: 'Enter you email'
-            },
-            validation: {
-                required: true,
-                email: true
-            },
-            valid: false,
-            validationMessage: ''
-        }
-    });
-
     function submitForm(event: FormEvent) {
 
     }
 
-    function updateForm(element:elementType) {
-        // const newFormData = {...formData};
-        //not effective in this case but for future is important
-        const newFormData = deepCopyClone(formData);
-        const newElement = {...newFormData[element.id]};
+    let objInput = {
+        element:"input",
+        value:"",
+        config:{
+            name: 'email_input',
+            type: 'email',
+            placeholder: 'Enter you email'
+        }
+    };
+    const { handleChange, handleSubmit, values, errors } = useForm();
 
-        // @ts-ignore //check it later
-        newElement.value = element.event.target.value;
-
-        console.log(element.id);
-
-        // newFormData[element.id] = newElement;
-        newFormData.value = newElement.value;
-        console.log(newFormData);
-        // ChangeFormData(...newFormData);
-    }
     return (
         <Fade>
             <div className="enroll_wrapper">
@@ -60,9 +34,9 @@ const Enroll = () => {
                     </div>
                     <div className="enroll_input">
                         <FormFields
-                            formData={formData.email}
+                            formDataConfig={objInput}
                             id="promotion"
-                            change={(element:elementType)=>updateForm(element)}
+                            change={handleChange}
                         />
                     </div>
                 </form>
