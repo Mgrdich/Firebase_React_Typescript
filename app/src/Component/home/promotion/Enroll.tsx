@@ -18,7 +18,7 @@ const Enroll = () => {
     };
     let input1Name: string = objInput.config.name;
     const {handleChange, handleSubmit, values, errors} = useForm(validate);
-    console.log(errors);
+
     return (
         <Fade>
             <div className="enroll_wrapper">

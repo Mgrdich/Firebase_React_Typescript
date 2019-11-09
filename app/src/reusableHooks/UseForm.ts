@@ -13,9 +13,12 @@ export function useForm(validate?: any, callback?: any) {
     }, [errors]);
 
     const handleSubmit = (event: FormEvent) => {
+        console.log("am i working");
         if (event) event.preventDefault();
         setIsSubmitting(true);
+        console.log('VAL',validate());
         if (validate()) {
+                console.log("values",values);
             setErrors(validate(values));
         }
     };
