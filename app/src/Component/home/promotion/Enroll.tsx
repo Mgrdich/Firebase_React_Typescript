@@ -1,16 +1,12 @@
-import React, {BaseSyntheticEvent, FormEvent, useState} from 'react';
+import React, {BaseSyntheticEvent} from 'react';
 import FormFields from "../../UI/FormFields";
 import {useForm} from "../../../reusableHooks/UseForm";
 import {IInputInfo} from "../../../Interfaces";
+import validate from "../../../Validations/homeEmail";
 
 const Fade = require("react-reveal/Fade");
 
 const Enroll = () => {
-    /*
-        function submitForm(event: FormEvent) {
-
-        }
-    */
 
     let objInput: IInputInfo = {
         element: "input",
@@ -21,12 +17,12 @@ const Enroll = () => {
         }
     };
     let input1Name: string = objInput.config.name;
-    const {handleChange, handleSubmit, values, errors} = useForm();
-
+    const {handleChange, handleSubmit, values, errors} = useForm(validate);
+    console.log(errors);
     return (
         <Fade>
             <div className="enroll_wrapper">
-                <form onSubmit={(event) => handleSubmit(event)} action="">
+                <form onSubmit={(event) => handleSubmit(event)} action="" noValidate={true}>
                     <div className="enroll_title">
                         Enter your email
                     </div>

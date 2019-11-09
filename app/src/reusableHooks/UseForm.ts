@@ -1,6 +1,6 @@
 import {BaseSyntheticEvent, FormEvent, useEffect, useState} from "react";
 
-export function useForm(callback?: any, validate?: any) {
+export function useForm(validate?: any, callback?: any) {
 
     const [values, setValues] = useState<any>({});
     const [errors, setErrors] = useState<any>({});
