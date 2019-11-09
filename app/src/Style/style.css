@@ -59,8 +59,9 @@ button {
   margin-top: 10px;
   font-size: 15px;
   border-radius: 3px; }
-  button span {
-    font-family: inherit; }
+
+button span {
+  font-family: inherit; }
 
 .error_label {
   color: #F44336;
@@ -572,3 +573,13 @@ footer .footer_discl {
   color: #d5ebfe;
   text-align: center;
   margin-top: 200px; }
+
+/*my Css*/
+.input_field_validation {
+  position: relative; }
+
+.input_field_validation .error_label {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  color: #e51111; }

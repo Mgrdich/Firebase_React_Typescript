@@ -16,9 +16,9 @@ export function useForm(validate?: any, callback?: any) {
         console.log("am i working");
         if (event) event.preventDefault();
         setIsSubmitting(true);
-        console.log('VAL',validate());
+        
         if (validate()) {
-                console.log("values",values);
+            console.log(values);
             setErrors(validate(values));
         }
     };

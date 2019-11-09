@@ -704,3 +704,15 @@ footer .footer_discl {
   text-align: center;
   margin-top: 200px;
 }
+
+
+/*my Css*/
+.input_field_validation {
+  position: relative;
+  .error_label {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    color:$errorColor;
+  }
+}
