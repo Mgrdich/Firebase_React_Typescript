@@ -12,6 +12,7 @@
     "@types/react": "16.9.3",
     "@types/react-dom": "16.9.1",
     "@types/react-router-dom": "^4.3.4",
+    "@types/webfontloader": "^1.6.29",
     "d3-ease": "1.0.3",
     "firebase": "5.0.4",
     "node-sass": "^4.11.0",
@@ -24,7 +25,8 @@
     "react-router-dom": "^5.1.1",
     "react-scripts": "3.1.2",
     "react-spinners": "^0.6.1",
-    "typescript": "3.6.3"
+    "typescript": "3.6.3",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "build:css": "node-sass src/Style/style.scss -o src/Style/ ",

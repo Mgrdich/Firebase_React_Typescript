@@ -1,16 +1,16 @@
-import {BaseSyntheticEvent, FormEvent, useEffect, useState} from "react";
+import {BaseSyntheticEvent, FormEvent, useState} from "react";
 
-export function useForm(validate?: any, callback?: any) {
+export function useForm(validate?: any) {
 
     const [values, setValues] = useState<any>({});
     const [errors, setErrors] = useState<any>({});
     const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-    useEffect(() => {
+   /* useEffect(() => {
         if (Object.keys(errors).length === 0 && isSubmitting) {
-            callback();
+            // callback() && callback();
         }
-    }, [errors,isSubmitting]);
+    }, [errors,isSubmitting]);*/
 
     const handleSubmit = (event: FormEvent) => {
         if (event) event.preventDefault();
@@ -32,6 +32,7 @@ export function useForm(validate?: any, callback?: any) {
         handleChange,
         handleSubmit,
         values,
-        errors
+        errors,
+        submitted:isSubmitting
     };
 }

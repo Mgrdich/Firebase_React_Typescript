@@ -17,7 +17,7 @@ const Enroll = () => {
         }
     };
     let input1Name: string = objInput.config.name;
-    const {handleChange, handleSubmit, values, errors} = useForm(validate);
+    const {handleChange, handleSubmit, values, errors,submitted} = useForm(validate);
 
     return (
         <Fade>
@@ -36,7 +36,7 @@ const Enroll = () => {
                             />
                             {errors[input1Name] &&
                             <label htmlFor="promotion" className="error_label">{errors[input1Name]}</label>}
-                            {!errors[input1Name] && <label className="success_label">Congratulations</label>}
+                            {submitted && !errors[input1Name] && <label className="success_label">Congratulations</label>}
                         </div>
                         <button type="submit">Enroll</button>
                     </div>

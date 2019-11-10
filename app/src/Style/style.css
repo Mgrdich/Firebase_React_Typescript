@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Schoolbell');
 */
 body {
+  font-family: "Titillium", serif; }
+
+body {
   margin: 0;
   padding: 0;
   font-family: 'Schoolbell', cursive !important;
@@ -59,8 +62,9 @@ button {
   margin-top: 10px;
   font-size: 15px;
   border-radius: 3px; }
-  button span {
-    font-family: inherit; }
+
+button span {
+  font-family: inherit; }
 
 .error_label {
   color: #F44336;
@@ -578,18 +582,27 @@ footer .footer_discl {
 /*my Css*/
 .input_field_validation {
   position: relative; }
-  .input_field_validation .error_label {
-    position: absolute;
-    left: 0;
-    top: 40px;
-    color: #e51111; }
+
+.input_field_validation label {
+  position: absolute;
+  left: 0;
+  top: 40px; }
+
+.input_field_validation label.error_label {
+  color: #e51111; }
+
+.input_field_validation label.success_label {
+  color: #98c5e9; }
 
 .flexBox {
   display: flex; }
-  .flexBox.email {
-    justify-content: center; }
-    .flexBox.email input {
-      width: 330px; }
-    .flexBox.email button {
-      height: 38px;
-      margin-top: 0; }
+
+.flexBox.email {
+  justify-content: center; }
+
+.flexBox.email input {
+  width: 330px; }
+
+.flexBox.email button {
+  height: 38px;
+  margin-top: 0; }
