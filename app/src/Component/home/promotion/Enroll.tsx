@@ -18,7 +18,7 @@ const Enroll = () => {
     };
     let input1Name: string = objInput.config.name;
     const {handleChange, handleSubmit, values, errors} = useForm(validate);
-    console.log(errors);
+
     return (
         <Fade>
             <div className="enroll_wrapper">
@@ -26,14 +26,19 @@ const Enroll = () => {
                     <div className="enroll_title">
                         Enter your email
                     </div>
-                    <div className="enroll_input input_field_validation">
-                        <FormFields
-                            formDataConfig={objInput}
-                            id="promotion"
-                            change={(e: BaseSyntheticEvent) => handleChange(e)}
-                            value={(values.hasOwnProperty(input1Name)) ? values[input1Name] : ''}
-                        />
-                        {errors[input1Name] && <label htmlFor="promotion" className="error_label">{errors[input1Name]}</label>}
+                    <div className="flexBox email">
+                        <div className="enroll_input input_field_validation">
+                            <FormFields
+                                formDataConfig={objInput}
+                                id="promotion"
+                                change={(e: BaseSyntheticEvent) => handleChange(e)}
+                                value={(values.hasOwnProperty(input1Name)) ? values[input1Name] : ''}
+                            />
+                            {errors[input1Name] &&
+                            <label htmlFor="promotion" className="error_label">{errors[input1Name]}</label>}
+                            {!errors[input1Name] && <label className="success_label">Congratulations</label>}
+                        </div>
+                        <button type="submit">Enroll</button>
                     </div>
                 </form>
             </div>

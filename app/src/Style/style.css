@@ -59,9 +59,8 @@ button {
   margin-top: 10px;
   font-size: 15px;
   border-radius: 3px; }
-
-button span {
-  font-family: inherit; }
+  button span {
+    font-family: inherit; }
 
 .error_label {
   color: #F44336;
@@ -435,11 +434,13 @@ footer .footer_discl {
   margin: 0 auto;
   padding: 10px 0px; }
 
+/*
 .promotion_wrapper .enroll_input {
   width: 330px;
   margin: 0 auto;
-  padding: 10px 0px; }
-
+  padding: 10px 0px;
+}
+*/
 /*=============================
          THE MATCHES
 ===============================*/
@@ -577,9 +578,18 @@ footer .footer_discl {
 /*my Css*/
 .input_field_validation {
   position: relative; }
+  .input_field_validation .error_label {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    color: #e51111; }
 
-.input_field_validation .error_label {
-  position: absolute;
-  left: 0;
-  top: 40px;
-  color: #e51111; }
+.flexBox {
+  display: flex; }
+  .flexBox.email {
+    justify-content: center; }
+    .flexBox.email input {
+      width: 330px; }
+    .flexBox.email button {
+      height: 38px;
+      margin-top: 0; }

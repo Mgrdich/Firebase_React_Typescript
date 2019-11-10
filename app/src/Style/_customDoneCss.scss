@@ -528,11 +528,13 @@ footer .footer_discl {
   padding: 10px 0px;
 }
 
+/*
 .promotion_wrapper .enroll_input {
   width: 330px;
   margin: 0 auto;
   padding: 10px 0px;
 }
+*/
 
 /*=============================
          THE MATCHES
@@ -709,10 +711,32 @@ footer .footer_discl {
 /*my Css*/
 .input_field_validation {
   position: relative;
-  .error_label {
+  label {
     position: absolute;
     left: 0;
     top: 40px;
-    color:$errorColor;
+    &.error_label {
+      color:$errorColor;
+    }
+    &.success_label {
+      color:$city_colors;
+    }
+  }
+}
+
+.flexBox {
+  display: flex;
+
+  &.email {
+    justify-content: center;
+
+    input {
+      width: 330px;
+    }
+
+    button {
+      height: 38px;
+      margin-top: 0;
+    }
   }
 }
