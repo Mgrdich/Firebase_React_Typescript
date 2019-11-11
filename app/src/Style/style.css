@@ -7,10 +7,8 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Schoolbell', cursive !important;
   width: 100%;
-  height: 100%;
-  background-color: #0d1831; }
+  height: 100%; }
 
 .my-container {
   width: 1280px; }
@@ -61,10 +59,10 @@ button {
   padding: 5px 10px;
   margin-top: 10px;
   font-size: 15px;
-  border-radius: 3px; }
-
-button span {
-  font-family: inherit; }
+  border-radius: 3px;
+  cursor: pointer; }
+  button span {
+    font-family: inherit; }
 
 .error_label {
   color: #F44336;
@@ -559,11 +557,14 @@ footer .footer_discl {
   margin-top: 96px;
   padding: 20px;
   min-height: 70VH;
-  text-align: center; }
+  text-align: center;
+  background: white; }
 
 .signin_wrapper form {
   width: 350px;
   margin: 0 auto; }
+  .signin_wrapper form input {
+    margin-top: 20px; }
 
 .signin_wrapper form button {
   width: 100%;
@@ -582,27 +583,21 @@ footer .footer_discl {
 /*my Css*/
 .input_field_validation {
   position: relative; }
-
-.input_field_validation label {
-  position: absolute;
-  left: 0;
-  top: 40px; }
-
-.input_field_validation label.error_label {
-  color: #e51111; }
-
-.input_field_validation label.success_label {
-  color: #98c5e9; }
+  .input_field_validation label {
+    position: absolute;
+    left: 0;
+    top: 40px; }
+    .input_field_validation label.error_label {
+      color: #e51111; }
+    .input_field_validation label.success_label {
+      color: #98c5e9; }
 
 .flexBox {
   display: flex; }
-
-.flexBox.email {
-  justify-content: center; }
-
-.flexBox.email input {
-  width: 330px; }
-
-.flexBox.email button {
-  height: 38px;
-  margin-top: 0; }
+  .flexBox.email {
+    justify-content: center; }
+    .flexBox.email input {
+      width: 330px; }
+    .flexBox.email button {
+      height: 38px;
+      margin-top: 0; }

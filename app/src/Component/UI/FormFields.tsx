@@ -28,6 +28,7 @@ const FormFields: React.FC<IFormFields> = ({formDataConfig, id, change,value}): 
     return (
         <>
             {renderTemplate(formDataConfig)}
+
         </>
     );
 };
