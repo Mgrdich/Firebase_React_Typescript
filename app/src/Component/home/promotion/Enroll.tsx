@@ -4,25 +4,17 @@ import {useForm} from "../../../reusableHooks/UseForm";
 import {IInputInfo} from "../../../Interfaces";
 import validate from "../../../Validations/homeEmail";
 import {isEmpty} from "../../../utilities/funcions";
+import {email} from "../../../utilities/Objects";
 
 const Fade = require("react-reveal/Fade");
 
 const Enroll = () => {
 
-    let objInput: IInputInfo = {
-        element: "input",
-        config: {
-            name: 'email_input',
-            type: 'email',
-            placeholder: 'Enter you email'
-        }
-    };
-    let input1Name: string = objInput.config.name;
+    let input1Name: string = email.config.name;
     const {handleChange, handleSubmit, values, errors, submitted} = useForm(validate);
 
     function Submitted(event: FormEvent) {
         handleSubmit(event);
-        console.log(submitted,isEmpty(errors),errors);
         if (isEmpty(errors)) {
             values[input1Name] = '';
         }
@@ -38,8 +30,7 @@ const Enroll = () => {
                     <div className="flexBox email">
                         <div className="enroll_input input_field_validation">
                             <FormFields
-                                formDataConfig={objInput}
-                                id="promotion"
+                                formDataConfig={email}
                                 change={(e: BaseSyntheticEvent) => handleChange(e)}
                                 value={(values.hasOwnProperty(input1Name)) ? values[input1Name] : ''}
                             />

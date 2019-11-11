@@ -8,14 +8,12 @@ const FormFields: React.FC<IFormFields> = ({formDataConfig, id, change,value}): 
         switch (frmData.element) {
             case ("input"): {
                 formTemplate = (
-                    <div>
                         <input
                             {...frmData.config}
                             value={value}
                             onChange={(event => change(event))}
                             id={id}
                         />
-                    </div>
                 );
                 break;
             }
