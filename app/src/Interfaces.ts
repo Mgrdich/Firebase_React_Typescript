@@ -90,3 +90,7 @@ export interface IInputInfo {
         placeholder: string;
     }
 }
+
+export interface IMathches {
+    match:any
+}

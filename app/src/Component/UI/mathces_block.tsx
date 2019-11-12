@@ -1,9 +1,9 @@
 import React from 'react';
 import Matc from "../../Style/images/team_icons/arsenal.png"
+import {IMathches} from "../../Interfaces";
 
 
-const MathcesBlock = (props: any) => {
-    const {match} = props;
+const MathcesBlock: React.FC<IMathches> = ({match}) => {
     return (
         <div className="match_block">
             <div className="match_date">
