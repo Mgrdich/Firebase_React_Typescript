@@ -2,6 +2,7 @@ import React from 'react';
 import {IPlayerProps} from "../../Interfaces";
 
 const PlayerCard: React.FC<IPlayerProps> = (props) => {
+
     return (
         <div className="player_card_wrapper">
             <div>
@@ -25,4 +26,4 @@ const PlayerCard: React.FC<IPlayerProps> = (props) => {
     );
 };
 
-export default PlayerCard;
+export default React.memo(PlayerCard);

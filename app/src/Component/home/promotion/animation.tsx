@@ -5,8 +5,6 @@ const Zoom = require("react-reveal/Zoom");
 
 const AnimationPromotion = () => {
     return (
-
-
         <div className="promotion_animation">
             <div className="left">
                 <Zoom>

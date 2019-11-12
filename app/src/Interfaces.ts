@@ -76,8 +76,10 @@ export interface IFormData {
 export interface IFormFields {
     id?: string;
     change: any;
-    formDataConfig:IInputInfo;
-    value:string;
+    formDataConfig: IInputInfo;
+    value: string;
+    error?: any;
+    submitted?: boolean;
 }
 
 export interface IInputInfo {

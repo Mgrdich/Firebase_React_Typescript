@@ -33,11 +33,9 @@ const Enroll = () => {
                                 formDataConfig={email}
                                 change={(e: BaseSyntheticEvent) => handleChange(e)}
                                 value={(values.hasOwnProperty(input1Name)) ? values[input1Name] : ''}
+                                error={errors[input1Name]}
+                                submitted={submitted}
                             />
-                            {errors[input1Name] &&
-                            <label htmlFor="promotion" className="error_label">{errors[input1Name]}</label>}
-                            {submitted && !errors[input1Name] &&
-                            <label className="success_label">Congratulations</label>}
                         </div>
                         <button type="submit">Enroll</button>
                     </div>
