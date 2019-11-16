@@ -8,17 +8,18 @@ import HomeCards from "./cards";
 
 const Reveal = require("react-reveal/Reveal");
 
+function listTags(data: Array<ITagsJson>): Array<JSX.Element> {
+    return (data.map((item: ITagsJson, index: number) => {
+        return (
+            <Tag bck={item.bck} size={item.size} color={item.color} linkTo="" add={{...item.add}} key={index}>
+                {item.content}
+            </Tag>
+        )
+    }));
+}
+
 const MeetThePlayer: React.FC = () => {
     const [show,changeShow] = useState<boolean>(false);
-    function listTags(data: Array<ITagsJson>): Array<JSX.Element> {
-        return (data.map((item: ITagsJson, index: number) => {
-            return (
-                <Tag bck={item.bck} size={item.size} color={item.color} linkTo="" add={{...item.add}} key={index}>
-                    {item.content}
-                </Tag>
-            )
-        }));
-    }
 
     return (
         <Reveal
