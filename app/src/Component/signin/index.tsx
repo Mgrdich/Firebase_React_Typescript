@@ -6,7 +6,7 @@ import {email, password} from "../../utilities/Objects";
 
 
 const Signin = () => {
-    const {handleChange, handleSubmit, values, errors, submitted} = useForm(validate);
+    const {handleChange, handleSubmit, values} = useForm(validate);
     let input1Name: string = email.config.name;
     let input2Name: string = password.config.name;
     return (

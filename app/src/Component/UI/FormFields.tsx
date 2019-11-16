@@ -1,5 +1,5 @@
 import React from 'react';
-import {IFormFields, IInputInfo} from "../../Interfaces";
+import {IFormFields} from "../../Interfaces";
 
 function renderTemplate(obj:IFormFields) {
     let formTemplate: JSX.Element | null = null;
@@ -34,7 +34,6 @@ const FormFields: React.FC<IFormFields> = (props): JSX.Element => {
     return (
         <>
             {renderTemplate(props)}
-
         </>
     );
 };

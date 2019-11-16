@@ -1,7 +1,6 @@
 import React, {BaseSyntheticEvent, FormEvent, useCallback} from 'react';
 import FormFields from "../../UI/FormFields";
 import {useForm} from "../../../reusableHooks/UseForm";
-import {IInputInfo} from "../../../Interfaces";
 import validate from "../../../Validations/homeEmail";
 import {isEmpty} from "../../../utilities/funcions";
 import {email} from "../../../utilities/Objects";
@@ -13,12 +12,12 @@ const Enroll = () => {
     let input1Name: string = email.config.name;
     const {handleChange, handleSubmit, values, errors, submitted} = useForm(validate);
 
-    const Submitted = useCallback(function(event: FormEvent) {
+    const Submitted = function(event: FormEvent) {
         handleSubmit(event);
         if (isEmpty(errors)) {
             values[input1Name] = '';
         }
-    },[submitted]);
+    };
 
     return (
         <Fade>

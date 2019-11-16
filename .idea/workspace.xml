@@ -4,12 +4,9 @@
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/UI/FormFields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/UI/FormFields.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/featured/Stripes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/featured/Stripes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/featured/Text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/featured/Text.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/matches/blocks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/matches/blocks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/cards.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/meetPlayers/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/utilities/variables.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/utilities/variables.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +115,7 @@
       <workItem from="1573494587266" duration="866000" />
       <workItem from="1573496427833" duration="2953000" />
       <workItem from="1573583860557" duration="1483000" />
-      <workItem from="1573926915029" duration="1366000" />
+      <workItem from="1573926915029" duration="3131000" />
     </task>
     <servers />
   </component>
