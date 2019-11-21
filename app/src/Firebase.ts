@@ -19,8 +19,38 @@ firebase.initializeApp(firebaseConfig);
 const firebaseDB = firebase.database();
 
 const firebaseMatches = firebaseDB.ref('matches');
+const fireBaseTeams = firebaseDB.ref('teams');
+fireBaseTeams.once('value').then((snapshot)=>{
+        let obj = snapshot.val();
+        Object.values(obj).map((ss:any)=>{
+            console.log(ss.thmb);
+    });
+
+});
 
 export {
     firebase,
     firebaseMatches,
 }
+
+
+"arsenal",
+ "bournemouth",
+"brighton",
+" burnley",
+"chelsea",
+" crystal_palace",
+"everton",
+"fulham",
+"huddersfield",
+" cardiff,
+"leicester",
+"liverpool",
+"newcastle",
+"tottenham",
+"watford",
+"west_ham",
+"wolverhampton",
+"southampton",
+"manchester_city",
+"manchesr_united"

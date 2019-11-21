@@ -6,9 +6,11 @@ body {
   height: 100%;
   //background-color: #0d1831;
 }
+
 .my-container {
   width: 1280px;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -66,8 +68,9 @@ button {
   font-size: 15px;
   border-radius: 3px;
   cursor: pointer;
+
   span {
-    font-family: inherit ;
+    font-family: inherit;
   }
 }
 
@@ -688,6 +691,7 @@ footer .footer_discl {
 .signin_wrapper form {
   width: 350px;
   margin: 0 auto;
+
   input {
     margin-top: 20px;
   }
@@ -716,15 +720,18 @@ footer .footer_discl {
 /*my Css*/
 .input_field_validation {
   position: relative;
+
   label {
     position: absolute;
     left: 0;
     top: 40px;
+
     &.error_label {
-      color:$errorColor;
+      color: $errorColor;
     }
+
     &.success_label {
-      color:$city_colors;
+      color: $city_colors;
     }
   }
 }
@@ -745,3 +752,46 @@ footer .footer_discl {
     }
   }
 }
+
+$teamName=
+(
+"arsenal"
+,
+"bournemouth"
+,
+"brighton"
+,
+" burnley"
+,
+"chelsea"
+,
+" crystal_palace"
+,
+"everton"
+,
+"fulham"
+,
+"huddersfield"
+,
+" cardiff,
+"leicester"
+,
+"liverpool"
+,
+"newcastle"
+,
+"tottenham"
+,
+"watford"
+,
+"west_ham"
+,
+"wolverhampton"
+,
+"southampton"
+,
+"manchester_city"
+,
+"manchesr_united"
+)
+;
