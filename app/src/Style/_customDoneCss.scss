@@ -753,45 +753,32 @@ footer .footer_discl {
   }
 }
 
-$teamName=
-(
-"arsenal"
-,
-"bournemouth"
-,
-"brighton"
-,
-" burnley"
-,
-"chelsea"
-,
-" crystal_palace"
-,
-"everton"
-,
-"fulham"
-,
-"huddersfield"
-,
-" cardiff,
-"leicester"
-,
-"liverpool"
-,
-"newcastle"
-,
-"tottenham"
-,
-"watford"
-,
-"west_ham"
-,
-"wolverhampton"
-,
-"southampton"
-,
-"manchester_city"
-,
-"manchesr_united"
-)
-;
+$teamName: (
+        "arsenal",
+        "bournemouth",
+        "brighton",
+        "burnley",
+        "chelsea",
+        "crystal_palace",
+        "everton",
+        "fulham",
+        "huddersfield",
+        "cardiff",
+        "leicester",
+        "liverpool",
+        "newcastle",
+        "tottenham",
+        "watford",
+        "west_ham",
+        "wolverhampton",
+        "southampton",
+        "manchester_city",
+        "manchesr_united");
+
+
+@each $teram in $teamName {
+  .team_#{$teram} {
+    background: url("images/team_icons/#{$teram}.png")
+    no-repeat center center ;
+  }
+}
