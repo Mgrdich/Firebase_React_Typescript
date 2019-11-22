@@ -61,9 +61,8 @@ button {
   font-size: 15px;
   border-radius: 3px;
   cursor: pointer; }
-
-button span {
-  font-family: inherit; }
+  button span {
+    font-family: inherit; }
 
 .error_label {
   color: #F44336;
@@ -564,9 +563,8 @@ footer .footer_discl {
 .signin_wrapper form {
   width: 350px;
   margin: 0 auto; }
-
-.signin_wrapper form input {
-  margin-top: 20px; }
+  .signin_wrapper form input {
+    margin-top: 20px; }
 
 .signin_wrapper form button {
   width: 100%;
@@ -585,30 +583,24 @@ footer .footer_discl {
 /*my Css*/
 .input_field_validation {
   position: relative; }
-
-.input_field_validation label {
-  position: absolute;
-  left: 0;
-  top: 40px; }
-
-.input_field_validation label.error_label {
-  color: #e51111; }
-
-.input_field_validation label.success_label {
-  color: #98c5e9; }
+  .input_field_validation label {
+    position: absolute;
+    left: 0;
+    top: 40px; }
+    .input_field_validation label.error_label {
+      color: #e51111; }
+    .input_field_validation label.success_label {
+      color: #98c5e9; }
 
 .flexBox {
   display: flex; }
-
-.flexBox.email {
-  justify-content: center; }
-
-.flexBox.email input {
-  width: 330px; }
-
-.flexBox.email button {
-  height: 38px;
-  margin-top: 0; }
+  .flexBox.email {
+    justify-content: center; }
+    .flexBox.email input {
+      width: 330px; }
+    .flexBox.email button {
+      height: 38px;
+      margin-top: 0; }
 
 .team_arsenal {
   background: url("images/team_icons/arsenal.png") no-repeat center center; }
@@ -619,7 +611,7 @@ footer .footer_discl {
 .team_brighton {
   background: url("images/team_icons/brighton.png") no-repeat center center; }
 
-.team_ burnley {
+.team_burnley {
   background: url("images/team_icons/burnley.png") no-repeat center center; }
 
 .team_chelsea {
@@ -637,7 +629,7 @@ footer .footer_discl {
 .team_huddersfield {
   background: url("images/team_icons/huddersfield.png") no-repeat center center; }
 
-.team_ cardiff {
+.team_cardiff {
   background: url("images/team_icons/cardiff.png") no-repeat center center; }
 
 .team_leicester {

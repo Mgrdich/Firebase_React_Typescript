@@ -12,7 +12,7 @@ const Enroll = () => {
     let input1Name: string = email.config.name;
     const {handleChange, handleSubmit, values, errors, submitted} = useForm(validate);
 
-    const Submitted = function(event: FormEvent) {
+    const Submitted = function(event: FormEvent,errors:any) {
         handleSubmit(event);
         if (isEmpty(errors)) {
             values[input1Name] = '';
@@ -22,7 +22,7 @@ const Enroll = () => {
     return (
         <Fade>
             <div className="enroll_wrapper">
-                <form onSubmit={(event) => Submitted(event)} action="" noValidate={true}>
+                <form onSubmit={(event) => Submitted(event,errors)} action="" noValidate={true}>
                     <div className="enroll_title">
                         Enter your email
                     </div>
