@@ -6,16 +6,22 @@ export function useForm(validate?: any) {
     const [errors, setErrors] = useState<any>({});
     const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-   /* useEffect(() => {
-        if (Object.keys(errors).length === 0 && isSubmitting) {
-            // callback() && callback();
-        }
-    }, [errors,isSubmitting]);*/
+    /* useEffect(() => {
+         if (Object.keys(errors).length === 0 && isSubmitting) {
+             // callback() && callback();
+         }
+     }, [errors,isSubmitting]);*/
 
-    const handleSubmit = (event: FormEvent) => {
-        if (event) event.preventDefault();
-        setIsSubmitting(true);
-        
+    const handleSubmit = (event: FormEvent, changeSubmit?: boolean) => {
+        if (changeSubmit) {
+            setIsSubmitting(false);
+            return;
+        }
+        if (event) {
+            event.preventDefault();
+            setIsSubmitting(true);
+        }
+
         if (validate()) {
             setErrors(validate(values));
         }
@@ -33,6 +39,6 @@ export function useForm(validate?: any) {
         handleSubmit,
         values,
         errors,
-        submitted:isSubmitting
+        submitted: isSubmitting,
     };
 }

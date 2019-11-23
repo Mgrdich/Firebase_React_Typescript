@@ -3,7 +3,7 @@ import {IFormFields} from "../../Interfaces";
 
 function renderTemplate(obj:IFormFields) {
     let formTemplate: JSX.Element | null = null;
-    let {formDataConfig, change, value, error, submitted, id} = obj;
+    let {formDataConfig, change, value, error, id} = obj;
     switch (formDataConfig.element) {
         case ("input"): {
             formTemplate = (
@@ -16,8 +16,6 @@ function renderTemplate(obj:IFormFields) {
                     />
                     {error &&
                     <label htmlFor="promotion" className="error_label">{error}</label>}
-                    {submitted && !error &&
-                    <label className="success_label">Congratulations</label>}
                 </>
             );
             break;
