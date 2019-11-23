@@ -16,13 +16,14 @@ const Enroll = () => {
 
     const Submitted = function (event: FormEvent, errors: any) {
         handleSubmit(event);
-        if (isEmpty(errors)) {
+        if (errors[input1Name]) {
             // values[input1Name] = '';
             firebasePromotion.orderByChild('email').equalTo(values[input1Name]).once("value")
                 .then((snapshot: any) => {
                     if (snapshot.val() === null) { //not found in the data base
                         resetSuccess(event, true);
-                        firebasePromotion.push(values).then(() =>{ } );
+                        firebasePromotion.push(values).then(() =>{
+                            console.log("pushed successfully"); } );
                         return;
                     }
                     resetSuccess(event, false);
