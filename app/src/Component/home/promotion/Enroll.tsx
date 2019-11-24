@@ -1,7 +1,7 @@
 import React, {BaseSyntheticEvent, FormEvent, useCallback, useState} from 'react';
 import FormFields from "../../UI/FormFields";
 import {useForm} from "../../../reusableHooks/UseForm";
-import {emailValidate} from "../../../Validations/validation";
+import {homeValidation} from "../../../Validations/homeValidation";
 import {email} from "../../../utilities/Objects";
 import {firebasePromotion} from "../../../Firebase";
 
@@ -10,7 +10,7 @@ const Fade = require("react-reveal/Fade");
 const Enroll = () => {
 
     let input1Name: string = email.config.name;
-    const {handleChange, handleSubmit, values, errors, submitted} = useForm([emailValidate]);
+    const {handleChange, handleSubmit, values, errors, submitted} = useForm(homeValidation);
     const [emailInDatabase, changeEmailInDatabase] = useState<boolean>(false);
 
     const Submitted = function (event: FormEvent, errors: any) {
