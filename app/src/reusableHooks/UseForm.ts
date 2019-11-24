@@ -1,6 +1,6 @@
 import {BaseSyntheticEvent, FormEvent, useState} from "react";
 
-export function useForm(validate?: any) {
+export function useForm(validate?: Array<Function>) {
 
     const [values, setValues] = useState<any>({});
     const [errors, setErrors] = useState<any>({});
@@ -22,8 +22,10 @@ export function useForm(validate?: any) {
             setIsSubmitting(true);
         }
 
-        if (validate()) {
-            setErrors(validate(values));
+        if (validate && validate.length) {
+            for (let i = 0; i < validate.length ; i++) {
+                setErrors(validate[i](values));
+            }
         }
     };
 

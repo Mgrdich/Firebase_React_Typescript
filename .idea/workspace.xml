@@ -4,7 +4,10 @@
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Firebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Validations/homeEmail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Validations/validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/utilities/Objects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/utilities/Objects.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +124,8 @@
       <workItem from="1573926915029" duration="3248000" />
       <workItem from="1574360331819" duration="4278000" />
       <workItem from="1574441868648" duration="1666000" />
-      <workItem from="1574529675385" duration="3185000" />
+      <workItem from="1574529675385" duration="3248000" />
+      <workItem from="1574591113133" duration="4072000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,7 @@
 import React, {BaseSyntheticEvent, FormEvent, useCallback, useState} from 'react';
 import FormFields from "../../UI/FormFields";
 import {useForm} from "../../../reusableHooks/UseForm";
-import validate from "../../../Validations/homeEmail";
-import {isEmpty} from "../../../utilities/funcions";
+import {emailValidate} from "../../../Validations/validation";
 import {email} from "../../../utilities/Objects";
 import {firebasePromotion} from "../../../Firebase";
 
@@ -11,7 +10,7 @@ const Fade = require("react-reveal/Fade");
 const Enroll = () => {
 
     let input1Name: string = email.config.name;
-    const {handleChange, handleSubmit, values, errors, submitted} = useForm(validate);
+    const {handleChange, handleSubmit, values, errors, submitted} = useForm([emailValidate]);
     const [emailInDatabase, changeEmailInDatabase] = useState<boolean>(false);
 
     const Submitted = function (event: FormEvent, errors: any) {
@@ -22,8 +21,7 @@ const Enroll = () => {
                 .then((snapshot: any) => {
                     if (snapshot.val() === null) { //not found in the data base
                         resetSuccess(event, true);
-                        firebasePromotion.push(values).then(() =>{
-                            console.log("pushed successfully"); } );
+                        firebasePromotion.push(values).then(() =>{} );
                         return;
                     }
                     resetSuccess(event, false);
