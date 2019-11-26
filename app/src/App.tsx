@@ -2,15 +2,17 @@ import React from 'react';
 import Layout from "./HOC/Layout";
 import {Switch, Route} from "react-router-dom";
 import Home from "./Component/home";
-import "./Firebase"
 import Signin from "./Component/signin";
+import Dashboard from "./Component/admin/Dashboard";
 
 const App = () => {
     return (
         <>
             <Layout>
                 <Switch>
-                    <Route exact component={Signin} path="/signin"></Route>
+
+                    <Route exact component={Dashboard} path="/admin"/>
+                    <Route exact component={Signin} path="/signin"/>
                     <Route exact component={Home} path="/"/>
                 </Switch>
             </Layout>

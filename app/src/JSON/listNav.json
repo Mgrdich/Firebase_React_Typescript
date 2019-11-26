@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Matches",
+    "linkTo": "/admin_mathces"
+  },
+  {
+    "title": "Add Match",
+    "linkTo": "/admin_mathces/edit_match"
+  },
+  {
+    "title": "Players",
+    "linkTo": "/admin_players"
+  },
+  {
+    "title": "Add Players",
+    "linkTo": "/admin_players/add_player"
+  }
+]

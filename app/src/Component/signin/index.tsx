@@ -20,7 +20,7 @@ const Signin:React.FC<RouteComponentProps> = (props) => {
                 values[input1Name],
                 values[input2Name]
             ).then(()=>{
-                props.history.push("/");
+                props.history.push("/admin");
             }).catch(errors=>{
                 changeFormError(true);
             })

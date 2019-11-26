@@ -94,3 +94,7 @@ export interface IInputInfo {
 export interface IMathches {
     match:any
 }
+
+export interface IAdminLayout extends ReactChildren{
+
+}
