@@ -4,7 +4,7 @@ interface Link {
 }
 
 interface ReactChildren {
-    children: JSX.Element | string | number;
+    children: Array<JSX.Element> | JSX.Element | string | number;
 }
 
 export interface IStripe {
@@ -92,9 +92,9 @@ export interface IInputInfo {
 }
 
 export interface IMathches {
-    match:any
+    match: any
 }
 
-export interface IAdminLayout extends ReactChildren{
+export interface IAdminLayout extends ReactChildren {
 
 }
