@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/admin/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/admin/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/nav/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/HOC/AdminLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/HOC/AdminLayout.tsx" afterDir="false" />
@@ -128,7 +132,9 @@
       <workItem from="1574705365667" duration="2249000" />
       <workItem from="1574707648391" duration="33000" />
       <workItem from="1574707755814" duration="39000" />
-      <workItem from="1574791431381" duration="2816000" />
+      <workItem from="1574791431381" duration="2891000" />
+      <workItem from="1574795387600" duration="148000" />
+      <workItem from="1574877931734" duration="2895000" />
     </task>
     <servers />
   </component>

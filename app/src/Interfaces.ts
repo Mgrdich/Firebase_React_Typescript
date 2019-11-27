@@ -1,3 +1,5 @@
+import {RouteProps} from "react-router";
+
 interface Link {
     linkTo: string;
     link?: boolean;
@@ -96,5 +98,12 @@ export interface IMathches {
 }
 
 export interface IAdminLayout extends ReactChildren {
-
 }
+
+export interface ICompRoutes extends RouteProps{
+    user:any;
+    // rest:any;
+    // props:any;
+}
+
+

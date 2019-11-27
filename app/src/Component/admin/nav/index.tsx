@@ -2,6 +2,7 @@ import React, {CSSProperties} from 'react';
 import {Link} from "react-router-dom";
 import playerList from "../../../JSON/listNav.json"
 import ListItem from "@material-ui/core/ListItem";
+import {firebase} from "../../../Firebase";
 
 type renderListItem = { title: string; linkTo: string; };
 
@@ -24,7 +25,11 @@ function renderList(list: Array<renderListItem>): Array<JSX.Element> {
 }
 
 function logoutHandler() {
-
+    firebase.auth().signOut().then(() =>{
+        console.log("successfully");
+    }).catch(()=>{
+        console.log("Error logging out");
+    });
 }
 
 const AdmiNav = () => {
