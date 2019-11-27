@@ -12,8 +12,7 @@ const App = () => {
         <>
             <Layout>
                 <Switch>
-                    <PrivateRoutes user={"ss"} component={PrivateRoutes} path="/dashboard" exact/>
-                    <Route exact component={Dashboard} path="/admin"/>
+                    <PrivateRoutes user={"ss"} component={Dashboard} path="/dashboard" exact/>
                     <Route exact component={Signin} path="/signin"/>
                     <Route exact component={Home} path="/"/>
                 </Switch>
