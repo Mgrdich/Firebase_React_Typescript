@@ -26,7 +26,7 @@ function renderList(list: Array<renderListItem>): Array<JSX.Element> {
 
 function logoutHandler() {
     firebase.auth().signOut().then(() =>{
-        console.log("successfully");
+        //TODO:Redirect to home
     }).catch(()=>{
         console.log("Error logging out");
     });

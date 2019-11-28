@@ -13,7 +13,7 @@ const Signin:React.FC<RouteComponentProps> = (props) => {
     let input1Name: string = email.config.name;
     let input2Name: string = password.config.name;
 
-    const onSubmit = function (event: FormEvent) {
+    const onSubmit = function (event: FormEvent) { //TODO: take it outside and give function as a parameter
         handleSubmit(event);
         if(validForm) {
             firebase.auth().signInWithEmailAndPassword(
