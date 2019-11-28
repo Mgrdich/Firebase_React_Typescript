@@ -1,9 +1,10 @@
 import React, {useContext} from "react";
 
 export const UserContext = React.createContext<any>({
-    user:null
+    user: null
 });
 export const useSession = () => {
-    const { user } = useContext(UserContext);
-    return user
+    const {user} = useContext(UserContext);
+    console.log(useContext(UserContext));
+    return {user: user}
 };

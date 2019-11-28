@@ -9,13 +9,15 @@ import {useSession} from "./reusableHooks/useSession";
 
 
 const App = () => {
-    const user = useSession();
+
+    const {user} = useSession();
     return (
         <>
             <Layout>
                 <Switch>
                     <PrivateRoutes user={user} component={Dashboard} path="/dashboard" exact/>
                     <Route exact component={Signin} path="/signin"/>
+                    <Route exact component={Dashboard} path="/admin"/>
                     <Route exact component={Home} path="/"/>
                 </Switch>
             </Layout>

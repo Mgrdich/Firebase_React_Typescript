@@ -5,6 +5,7 @@ import {Redirect, Route} from "react-router";
 const PrivateRoutes: React.FC<ICompRoutes> = (props) => {
     const {user, component: Comp, ...rest}: any = props;
 
+
     return (
         <Route {...rest} component={(props: any) => (
             (user) ?

@@ -1,10 +1,10 @@
 import  {useState, useEffect} from "react";
-import firebase from "firebase";
+import {auth} from "firebase";
 
 
 export const useAuth = () => {
     const [myAuth, changeAuth] = useState(() => {
-        const user = firebase.auth().currentUser;
+        const user = auth().currentUser;
         return {initializing: !user, user}
     });
 
@@ -14,10 +14,10 @@ export const useAuth = () => {
 
     useEffect(() => {
         // listen for auth state changes
-        const unsubscribe = firebase.auth().onAuthStateChanged(onChange);
+        const unsubscribe = auth().onAuthStateChanged(onChange);
         // unsubscribe to the listener when unmounting
         return () => unsubscribe()
-    }, []);
+    }, [auth]);
 
     return myAuth;
 };
