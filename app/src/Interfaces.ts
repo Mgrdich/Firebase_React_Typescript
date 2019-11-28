@@ -102,8 +102,6 @@ export interface IAdminLayout extends ReactChildren {
 
 export interface ICompRoutes extends RouteProps{
     user:any;
-    // rest:any;
-    // props:any;
 }
 
 

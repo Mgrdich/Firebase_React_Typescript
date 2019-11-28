@@ -1,12 +1,11 @@
 import React from 'react';
-import {ICompRoutes} from "../../Interfaces";
 import {Redirect, Route} from "react-router";
 
 const PubicRoutes: React.FC<any> = (props) => {
-    const  {rest,user,props:pp,component:Comp} = props;
-    return <Route {...rest} component={(pp:any)=>(
+    const {user, component: Comp, ...rest} = props;
+    return <Route {...rest} component={(props: any) => (
         rest.restricted ?
-            ( user ?
+            (user ?
                     <Redirect to="/dashboard"/>
                     :
                     <Comp {...props} user={user}/>
