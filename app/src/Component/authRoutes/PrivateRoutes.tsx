@@ -1,9 +1,11 @@
 import React from 'react';
-import {ICompRoutes} from "../../Interfaces";
-import {Redirect, Route} from "react-router";
+import {Redirect, Route, RouteProps} from "react-router";
+import {useSession} from "../../reusableHooks/useSession";
 
-const PrivateRoutes: React.FC<ICompRoutes> = (props) => {
-    const {user, component: Comp, ...rest}: any = props;
+const PrivateRoutes: React.FC<RouteProps> = (props) => {
+    const {user} = useSession();
+    console.log("private",user);
+    const { component: Comp, ...rest}: any = props;
     return (
         <Route {...rest} render={(props: any) => (
             (user) ?

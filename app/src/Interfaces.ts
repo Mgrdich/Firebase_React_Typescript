@@ -100,8 +100,5 @@ export interface IMathches {
 export interface IAdminLayout extends ReactChildren {
 }
 
-export interface ICompRoutes extends RouteProps{
-    user:any;
-}
 
 

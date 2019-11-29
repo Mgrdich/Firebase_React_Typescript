@@ -7,21 +7,24 @@ import {firebase} from "../../Firebase";
 import {RouteComponentProps} from "react-router";
 
 
-const Signin:React.FC<RouteComponentProps> = (props) => {
+const Signin: React.FC<RouteComponentProps> = (props) => {
     const {handleChange, handleSubmit, values, errors, validForm} = useForm(signinValidation);
-    const [formError,changeFormError] =useState<boolean>(false);
+    const [formError, changeFormError] = useState<boolean>(false);
     let input1Name: string = email.config.name;
     let input2Name: string = password.config.name;
+    console.log("signin");
+    
 
-    const onSubmit = function (event: FormEvent) { //TODO: take it outside and give function as a parameter
+    const onSubmit = function (event: FormEvent) {
         handleSubmit(event);
-        if(validForm) {
+        if (validForm) {
             firebase.auth().signInWithEmailAndPassword(
                 values[input1Name],
                 values[input2Name]
-            ).then(()=>{
+            ).then(() => {
+                console.log("done");
                 props.history.push("/dashboard");
-            }).catch(errors=>{
+            }).catch(errors => {
                 changeFormError(true);
             })
         }
@@ -40,7 +43,7 @@ const Signin:React.FC<RouteComponentProps> = (props) => {
                                 value={(values.hasOwnProperty(input2Name)) ? values[input2Name] : ''}
                                 error={errors[input2Name]}
                     />
-                    {formError ? <div className="error_label">Something is wrong try again</div>:<></>}
+                    {formError ? <div className="error_label">Something is wrong try again</div> : <></>}
                     <button type="submit">Log in</button>
                 </form>
             </div>

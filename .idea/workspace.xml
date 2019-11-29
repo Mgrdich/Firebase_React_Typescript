@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/History/history.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/admin/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/admin/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/nav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/History/history.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/History/history.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +135,7 @@
       <workItem from="1574877931734" duration="4906000" />
       <workItem from="1574959246185" duration="8436000" />
       <workItem from="1574968390736" duration="16000" />
-      <workItem from="1575051966282" duration="1499000" />
+      <workItem from="1575051966282" duration="4099000" />
     </task>
     <servers />
   </component>

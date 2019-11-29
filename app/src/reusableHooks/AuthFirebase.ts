@@ -17,7 +17,7 @@ export const useAuth = () => {
         const unsubscribe = auth().onAuthStateChanged(onChange);
         // unsubscribe to the listener when unmounting
         return () => unsubscribe()
-    }, [auth]);
+    }, []);
 
     return myAuth;
 };
