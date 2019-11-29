@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import AppAuth from "./AppAuth";
 import "./Style/style.css";
-import {BrowserRouter} from "react-router-dom";
+import {Router} from "react-router";
+import {history} from "./History/history";
 // import WebFont from 'webfontloader';
 /*
 WebFont.load({
@@ -11,6 +12,6 @@ WebFont.load({
     }
 });*/
 
-ReactDOM.render(<BrowserRouter><AppAuth/></BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(<Router history={history}><AppAuth/></Router>, document.getElementById('root'));
 
 

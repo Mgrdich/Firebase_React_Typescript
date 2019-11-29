@@ -1,7 +1,8 @@
 import React from 'react';
 import AdminLayout from "../../HOC/AdminLayout";
+import {RouteProps} from "react-router";
 
-const Dashboard = () => {
+const Dashboard:React.FC<RouteProps> = (props) => {
     return (
         <AdminLayout>
             <div className="user_dashboard">

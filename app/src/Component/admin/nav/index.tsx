@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 import playerList from "../../../JSON/listNav.json"
 import ListItem from "@material-ui/core/ListItem";
 import {firebase} from "../../../Firebase";
+import {history} from "../../../History/history";
+
 
 type renderListItem = { title: string; linkTo: string; };
 
@@ -25,9 +27,9 @@ function renderList(list: Array<renderListItem>): Array<JSX.Element> {
 }
 
 function logoutHandler() {
-    firebase.auth().signOut().then(() =>{
-        //TODO:Redirect to home
-    }).catch(()=>{
+    firebase.auth().signOut().then(() => {
+        history.push("/");
+    }).catch(() => {
         console.log("Error logging out");
     });
 }
@@ -36,7 +38,7 @@ const AdmiNav = () => {
     return (
         <>
             {renderList(playerList)}
-            <ListItem button style={styleNav} onClick={()=>logoutHandler()}>
+            <ListItem button style={styleNav} onClick={() => logoutHandler()}>
                 Log out
             </ListItem>
         </>
