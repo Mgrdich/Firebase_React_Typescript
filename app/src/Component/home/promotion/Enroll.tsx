@@ -15,7 +15,7 @@ const Enroll = () => {
 
     const Submitted = function (event: FormEvent, errors: any) {
         handleSubmit(event);
-        if (errors[input1Name]) {
+        if (errors[input1Name]) { //Todo:idea here is the wrong one should be when there is no errors
             // values[input1Name] = '';
             firebasePromotion.orderByChild('email').equalTo(values[input1Name]).once("value")
                 .then((snapshot: any) => {
@@ -33,7 +33,7 @@ const Enroll = () => {
     const resetSuccess = useCallback((event: FormEvent, emailChecking: boolean) => {
         changeEmailInDatabase(emailChecking);
         setTimeout(() => {
-            handleSubmit(event, true);
+            handleSubmit(event); //fadding out animation
         }, 2000);
 
     },[emailInDatabase]);

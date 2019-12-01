@@ -4,7 +4,6 @@ import {useSession} from "../../reusableHooks/useSession";
 
 const PrivateRoutes: React.FC<RouteProps> = (props) => {
     const {user} = useSession();
-    console.log("private",user);
     const { component: Comp, ...rest}: any = props;
     return (
         <Route {...rest} render={(props: any) => (

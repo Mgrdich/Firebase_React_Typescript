@@ -1,8 +1,11 @@
 import React from 'react';
 import App from "./App";
-import {UserContext} from "./reusableHooks/useSession";
-import {useAuth} from "./reusableHooks/AuthFirebase";
 import {ClipLoader} from "react-spinners";
+import {useAuth} from "./reusableHooks/AuthFirebase";
+
+export const UserContext = React.createContext<any>({
+    user: null
+});
 
 const AppAuth = () => {
     const {initializing, user} = useAuth();

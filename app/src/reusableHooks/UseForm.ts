@@ -1,4 +1,4 @@
-import {BaseSyntheticEvent, FormEvent, useState} from "react";
+import {BaseSyntheticEvent, FormEvent, useCallback, useState} from "react";
 import {isEmpty} from "../utilities/funcions";
 
 export function useForm(validate?: Function) {
@@ -13,23 +13,20 @@ export function useForm(validate?: Function) {
          }
      }, [errors,isSubmitting]);*/
 
-    const handleSubmit = (event: FormEvent, changeSubmit?: boolean) => {
-        if (changeSubmit) {
-            setIsSubmitting(false);
-            return;
-        }
+    const handleSubmit = (event: FormEvent): void => {
         if (event) {
             event.preventDefault();
             setIsSubmitting(true);
         }
 
         if (validate && validate()) {
-            setErrors(validate(values)); //always specific for all the form and the validation is written for all the form
-            changeFormValidity(isEmpty(errors));
+            const errors:any = validate(values);
+            setErrors(errors); //always specific for all the form and the validation is written for all the form
+            //errors is working ehh
+            const validatedFields = isEmpty(errors);
+            changeFormValidity(validatedFields);
             return;
         }
-        changeFormValidity(isEmpty(errors));
-
     };
 
     const handleChange = (event: BaseSyntheticEvent) => {

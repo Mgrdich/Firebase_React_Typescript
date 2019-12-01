@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/AppAuth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/AppAuth.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/History/history.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/History/history.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/useSession.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/useSession.ts" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +43,11 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -67,15 +72,15 @@
       <recent name="$PROJECT_DIR$/app/images" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -135,7 +140,9 @@
       <workItem from="1574877931734" duration="4906000" />
       <workItem from="1574959246185" duration="8436000" />
       <workItem from="1574968390736" duration="16000" />
-      <workItem from="1575051966282" duration="4099000" />
+      <workItem from="1575051966282" duration="4165000" />
+      <workItem from="1575056396137" duration="10000" />
+      <workItem from="1575141655262" duration="17147000" />
     </task>
     <servers />
   </component>
@@ -157,5 +164,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="498" height="450" key="SwitcherDM" timestamp="1575221778622">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="498" height="450" key="SwitcherDM/0.0.1920.1052@0.0.1920.1052" timestamp="1575221778622" />
+    <state x="636" y="267" width="647" height="518" key="find.popup" timestamp="1575213881966">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575213881966" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1575223103112">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575223103112" />
   </component>
 </project>

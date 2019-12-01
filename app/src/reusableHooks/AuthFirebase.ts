@@ -2,14 +2,14 @@ import  {useState, useEffect} from "react";
 import {auth} from "firebase";
 
 
-export const useAuth = () => {
+export const useAuth = () => {  //skipping one iter
     const [myAuth, changeAuth] = useState(() => {
         const user = auth().currentUser;
         return {initializing: !user, user}
     });
 
-    function onChange(user: any) {
-        changeAuth({initializing: false, user})
+    function onChange(user:any) {
+        changeAuth({initializing: false, user:user})
     }
 
     useEffect(() => {

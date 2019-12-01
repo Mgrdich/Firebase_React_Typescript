@@ -1,10 +1,7 @@
-import React, {useContext} from "react";
+import  {useContext} from "react";
+import {UserContext} from "../AppAuth";
 
-export const UserContext = React.createContext<any>({
-    user: null
-});
 export const useSession = () => {
     const {user} = useContext(UserContext);
-    console.log(useContext(UserContext));
-    return {user: user}
+    return {user: user};
 };
