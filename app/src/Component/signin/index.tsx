@@ -9,14 +9,14 @@ import {useSession} from "../../reusableHooks/useSession";
 
 
 const Signin: React.FC<RouteComponentProps> = (props) => {
-    const {handleChange, handleSubmit, values, errors, validForm,submitted} = useForm(signinValidation);
+    const {handleChange, handleSubmit, values, errors, validForm} = useForm(signinValidation);
     const {user} = useSession();
     const [formError, changeFormError] = useState<boolean>(false);
     let input1Name: string = email.config.name;
     let input2Name: string = password.config.name;
 
-    useEffect(() => {
-        if (submitted && validForm) {
+    useEffect(() => { //TODO:make a custom hook for if
+        if (validForm) {
             firebase.auth().signInWithEmailAndPassword(
                 values[input1Name],
                 values[input2Name]

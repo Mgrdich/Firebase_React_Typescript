@@ -20,13 +20,14 @@ export function useForm(validate?: Function) {
         }
 
         if (validate && validate()) {
-            const errors:any = validate(values);
-            setErrors(errors); //always specific for all the form and the validation is written for all the form
+            const err:any = validate(values);
+            setErrors(err); //always specific for all the form and the validation is written for all the form
             //errors is working ehh
-            const validatedFields = isEmpty(errors);
+            const validatedFields = isEmpty(err);
             changeFormValidity(validatedFields);
             return;
         }
+        changeFormValidity(isEmpty(errors));
     };
 
     const handleChange = (event: BaseSyntheticEvent) => {

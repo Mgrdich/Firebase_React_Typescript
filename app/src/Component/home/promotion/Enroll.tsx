@@ -1,4 +1,4 @@
-import React, {BaseSyntheticEvent, FormEvent, useCallback, useState} from 'react';
+import React, {BaseSyntheticEvent, FormEvent, useCallback, useEffect, useState} from 'react';
 import FormFields from "../../UI/FormFields";
 import {useForm} from "../../../reusableHooks/UseForm";
 import {homeValidation} from "../../../Validations/homeValidation";
@@ -15,7 +15,7 @@ const Enroll = () => {
 
     const Submitted = function (event: FormEvent, errors: any) {
         handleSubmit(event);
-        if (errors[input1Name]) { //Todo:idea here is the wrong one should be when there is no errors
+        if (errors[input1Name]) { //Todo:idea here is the wrong one should be when there is no errors let you works once
             // values[input1Name] = '';
             firebasePromotion.orderByChild('email').equalTo(values[input1Name]).once("value")
                 .then((snapshot: any) => {
@@ -30,11 +30,11 @@ const Enroll = () => {
         }
     };
 
+    //Todo:redesign this section
+
     const resetSuccess = useCallback((event: FormEvent, emailChecking: boolean) => {
         changeEmailInDatabase(emailChecking);
-        setTimeout(() => {
-            handleSubmit(event); //fadding out animation
-        }, 2000);
+        handleSubmit(event); //fadding out animation
 
     },[emailInDatabase]);
 
