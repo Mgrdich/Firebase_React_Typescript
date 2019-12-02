@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/AppAuth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/AppAuth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/useSession.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/useSession.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,8 @@
       <workItem from="1574968390736" duration="16000" />
       <workItem from="1575051966282" duration="4165000" />
       <workItem from="1575056396137" duration="10000" />
-      <workItem from="1575141655262" duration="18756000" />
+      <workItem from="1575141655262" duration="19149000" />
+      <workItem from="1575311910313" duration="2342000" />
     </task>
     <servers />
   </component>
@@ -165,9 +167,14 @@
       <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state width="498" height="450" key="SwitcherDM/0.0.1920.1052@0.0.1920.1052" timestamp="1575221778622" />
-    <state x="636" y="267" width="647" height="518" key="find.popup" timestamp="1575213881966">
-      <screen x="0" y="0" width="1920" height="1052" />
+    <state x="2449" y="159" width="923" height="754" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575313612846">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2449" y="159" width="923" height="754" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575313612846" />
+    <state x="2556" y="274" width="647" height="532" key="find.popup" timestamp="1575314232853">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2556" y="274" width="647" height="532" key="find.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575314232853" />
     <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575213881966" />
     <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1575223103112">
       <screen x="0" y="0" width="1920" height="1052" />

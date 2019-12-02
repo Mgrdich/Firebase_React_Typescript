@@ -8,6 +8,7 @@ export const useAuth = () => {  //skipping one iter
         return {initializing: !user, user}
     });
 
+    //Todo : figure out initalizing or remove it to the local call
     function onChange(user:any) {
         changeAuth({initializing: false, user:user})
     }

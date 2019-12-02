@@ -10,39 +10,47 @@ const Fade = require("react-reveal/Fade");
 const Enroll = () => {
 
     let input1Name: string = email.config.name;
-    const {handleChange, handleSubmit, values, errors, submitted} = useForm(homeValidation);
-    const [emailInDatabase, changeEmailInDatabase] = useState<boolean>(false);
+    const {handleChange, handleSubmit, values, errors, submitted, validForm} = useForm(homeValidation);
+    const [emailInDatabase, changeEmailInDatabase] = useState<boolean|null>(null);
 
-    const Submitted = function (event: FormEvent, errors: any) {
-        handleSubmit(event);
-        if (errors[input1Name]) { //Todo:idea here is the wrong one should be when there is no errors let you works once
-            // values[input1Name] = '';
+    useEffect(() => { //since it is always checking
+        if (validForm) {
             firebasePromotion.orderByChild('email').equalTo(values[input1Name]).once("value")
                 .then((snapshot: any) => {
                     if (snapshot.val() === null) { //not found in the data base
-                        resetSuccess(event, true);
-                        firebasePromotion.push(values).then(() =>{} );
+                        resetSuccess(true);
+                        firebasePromotion.push(values).then(() => {
+                        });
                         return;
                     }
-                    resetSuccess(event, false);
-
-                })
+                    resetSuccess(false);
+                });
         }
-    };
+    });
 
-    //Todo:redesign this section
-
-    const resetSuccess = useCallback((event: FormEvent, emailChecking: boolean) => {
+    const resetSuccess = useCallback((emailChecking: boolean) => {
         changeEmailInDatabase(emailChecking);
-        handleSubmit(event); //fadding out animation
+    }, [emailInDatabase]);
 
-    },[emailInDatabase]);
-
+    const errorMessageJSX = useCallback(() => {
+        let labelText:string= '';
+        if(emailInDatabase){ //TODO make this a function pure fo if true else fasle
+            labelText = "Congrats";
+        } else if(emailInDatabase===false) {
+            labelText = "Already in Database"
+        }
+        const labelError: JSX.Element = <label
+            className={(emailInDatabase)?'success_label':'error_label'}>{labelText}</label>;
+        if (emailInDatabase) {
+            return <Fade>{labelError}</Fade>;
+        }
+        return labelError;
+    }, [emailInDatabase]);
 
     return (
         <Fade>
             <div className="enroll_wrapper">
-                <form onSubmit={(event) => Submitted(event, errors)} action="" noValidate={true}>
+                <form onSubmit={(event) => handleSubmit(event)} action="" noValidate={true}>
                     <div className="enroll_title">
                         Enter your email
                     </div>
@@ -55,9 +63,7 @@ const Enroll = () => {
                                 error={errors[input1Name]}
                                 submitted={submitted}
                             />
-                            {submitted && !errors[input1Name] &&
-                            <label
-                                className="success_label">{(emailInDatabase) ? "Congrats" : "Already in Database"}</label>}
+                            {submitted && !errors[input1Name] && errorMessageJSX()}
                         </div>
                         <button type="submit">Enroll</button>
                     </div>
