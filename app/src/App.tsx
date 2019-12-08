@@ -4,8 +4,9 @@ import {Switch, Route} from "react-router-dom";
 import Home from "./Component/home";
 import Signin from "./Component/signin";
 import Dashboard from "./Component/admin/Dashboard";
-import PrivateRoutes from "./Component/authRoutes/PrivateRoutes";
+import PrivateRoute from "./Component/authRoutes/PrivateRoutes";
 import PubicRoutes from "./Component/authRoutes/PubicRoutes";
+import AdminMatches from "./Component/admin/matches";
 
 const App = () => {
 
@@ -13,7 +14,8 @@ const App = () => {
         <>
             <Layout>
                 <Switch>
-                    <PrivateRoutes component={Dashboard} path="/dashboard" exact/>
+                    <PrivateRoute path="/admin_matches" exact component={AdminMatches}/>
+                    <PrivateRoute component={Dashboard} path="/dashboard" exact/>
                     <PubicRoutes exact restricted={true} component={Signin} path="/signin"/>
                     <PubicRoutes exact component={Dashboard} path="/admin"/>
                     <PubicRoutes exact restricted={false} component={Home} path="/"/>

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/AppAuth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/AppAuth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +141,7 @@
       <workItem from="1575056396137" duration="10000" />
       <workItem from="1575141655262" duration="19149000" />
       <workItem from="1575311910313" duration="2420000" />
-      <workItem from="1575811573302" duration="4334000" />
+      <workItem from="1575811573302" duration="6734000" />
     </task>
     <servers />
   </component>
@@ -182,19 +181,19 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2449" y="159" width="923" height="754" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575829211725" />
-    <state x="2556" y="274" width="647" height="532" key="find.popup" timestamp="1575314232853">
+    <state x="2556" y="274" width="647" height="532" key="find.popup" timestamp="1575832221216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2556" y="274" width="647" height="532" key="find.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575314232853" />
+    <state x="2556" y="274" width="647" height="532" key="find.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575832221216" />
     <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575213881966" />
     <state x="2544" y="247" key="run.anything.popup" timestamp="1575812844538">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2544" y="247" key="run.anything.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812844538" />
-    <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup" timestamp="1575813472326">
+    <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup" timestamp="1575831511451">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575813472326" />
+    <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575831511451" />
     <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575223103112" />
   </component>
 </project>

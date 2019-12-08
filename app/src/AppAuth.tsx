@@ -7,7 +7,7 @@ export const UserContext = React.createContext<any>({
     user: null
 });
 
-const AppAuth = () => {
+const AppAuth = () => {   //TODO replace the loader with material ui loader and then remove the library from th packages
     const {initializing, user} = useAuth();
 
     if (initializing) {

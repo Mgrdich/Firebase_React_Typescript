@@ -13,7 +13,7 @@ const Enroll = () => {
     const {handleChange, handleSubmit, values, errors, submitted, validForm} = useForm(homeValidation);
     const [emailInDatabase, changeEmailInDatabase] = useState<boolean|null>(null);
 
-    useEffect(() => { //since it is always checking
+    useEffect(() => { //TODO custom fetching for Database hook or replave it with useEffectIf hook
         if (validForm) {
             firebasePromotion.orderByChild('email').equalTo(values[input1Name]).once("value")
                 .then((snapshot: any) => {
