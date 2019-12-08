@@ -6,6 +6,7 @@ import {email, password} from "../../utilities/Objects";
 import {firebase} from "../../Firebase";
 import {Redirect, RouteComponentProps} from "react-router";
 import {useSession} from "../../reusableHooks/useSession";
+import {useEffectIf} from "../../reusableHooks/UseEffectIf";
 
 
 const Signin: React.FC<RouteComponentProps> = (props) => {
@@ -15,18 +16,16 @@ const Signin: React.FC<RouteComponentProps> = (props) => {
     let input1Name: string = email.config.name;
     let input2Name: string = password.config.name;
 
-    useEffect(() => { //TODO:make a custom hook for if
-        if (validForm) {
-            firebase.auth().signInWithEmailAndPassword(
-                values[input1Name],
-                values[input2Name]
-            ).then(() => {
-                props.history.push("/dashboard");
-            }).catch(errors => {
-                changeFormError(true);
-            })
-        }
-    }, [validForm]);
+    useEffectIf(()=>{
+        firebase.auth().signInWithEmailAndPassword(
+            values[input1Name],
+            values[input2Name]
+        ).then(() => {
+            props.history.push("/dashboard");
+        }).catch(errors => {
+            changeFormError(true);
+        })
+    },validForm,[validForm]);
 
 
     const onSubmit = function (event: FormEvent) {

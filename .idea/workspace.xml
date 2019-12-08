@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseEffectIf.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Validations/homeValidation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Validations/homeValidation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseForm.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +141,8 @@
       <workItem from="1575051966282" duration="4165000" />
       <workItem from="1575056396137" duration="10000" />
       <workItem from="1575141655262" duration="19149000" />
-      <workItem from="1575311910313" duration="2342000" />
+      <workItem from="1575311910313" duration="2420000" />
+      <workItem from="1575811573302" duration="1930000" />
     </task>
     <servers />
   </component>
@@ -163,6 +166,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2613" y="346" width="524" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575812518268">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2613" y="346" width="524" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812518268" />
+    <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl" timestamp="1575314328068">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575314328068" />
     <state width="498" height="450" key="SwitcherDM" timestamp="1575221778622">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>
@@ -176,9 +187,14 @@
     </state>
     <state x="2556" y="274" width="647" height="532" key="find.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575314232853" />
     <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575213881966" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1575223103112">
-      <screen x="0" y="0" width="1920" height="1052" />
+    <state x="2544" y="247" key="run.anything.popup" timestamp="1575812844538">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2544" y="247" key="run.anything.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812844538" />
+    <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup" timestamp="1575813472326">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575813472326" />
     <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575223103112" />
   </component>
 </project>

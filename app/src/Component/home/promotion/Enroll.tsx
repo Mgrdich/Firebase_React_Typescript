@@ -1,4 +1,4 @@
-import React, {BaseSyntheticEvent, FormEvent, useCallback, useEffect, useState} from 'react';
+import React, {BaseSyntheticEvent, useCallback, useEffect, useState} from 'react';
 import FormFields from "../../UI/FormFields";
 import {useForm} from "../../../reusableHooks/UseForm";
 import {homeValidation} from "../../../Validations/homeValidation";

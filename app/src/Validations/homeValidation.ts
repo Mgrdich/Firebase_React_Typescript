@@ -1,4 +1,4 @@
-import {email, password} from "../utilities/Objects";
+import {email} from "../utilities/Objects";
 
 export function homeValidation(values: any) {
     let errors: any = {};
