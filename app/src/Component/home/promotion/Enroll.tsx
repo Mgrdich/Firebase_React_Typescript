@@ -30,7 +30,7 @@ const Enroll = () => {
 
     const resetSuccess = useCallback((emailChecking: boolean) => {
         changeEmailInDatabase(emailChecking);
-    }, [emailInDatabase]);
+    }, []);
 
     const errorMessageJSX = useCallback(() => {
         let labelText:string= '';

@@ -661,3 +661,12 @@ footer .footer_discl {
 
 .team_manchesr_united {
   background: url("images/team_icons/manchesr_united.png") no-repeat center center; }
+
+.loadingPage {
+  height: 100vh;
+  position: relative; }
+  .loadingPage .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }

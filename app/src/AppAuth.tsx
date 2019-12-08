@@ -11,7 +11,11 @@ const AppAuth = () => {
     const {initializing, user} = useAuth();
 
     if (initializing) {
-        return <ClipLoader color="#0d1831" size={450} sizeUnit="px"/>;
+        return (
+            <div className="loadingPage">
+                <div className="loader"><ClipLoader color="white" size={250} sizeUnit="px"/></div>
+            </div>
+            )
     }
 
     return (

@@ -778,7 +778,19 @@ $teamName: (
 
 @each $teram in $teamName {
   .team_#{$teram} {
-    background: url("images/team_icons/#{$teram}.png")
-    no-repeat center center ;
+    background: url("images/team_icons/#{$teram}.png") no-repeat center center;
+  }
+}
+
+
+.loadingPage {
+  height: 100vh;
+  position: relative;
+  background-color:$city_colors;
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
