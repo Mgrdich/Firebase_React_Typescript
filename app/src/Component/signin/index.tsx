@@ -4,7 +4,7 @@ import {useForm} from "../../reusableHooks/UseForm";
 import {signinValidation} from "../../Validations/signinValidation";
 import {email, password} from "../../utilities/Objects";
 import {firebase} from "../../Firebase";
-import {Redirect, RouteComponentProps} from "react-router";
+import  {RouteComponentProps} from "react-router";
 import {useSession} from "../../reusableHooks/useSession";
 import {useEffectIf} from "../../reusableHooks/UseEffectIf";
 
@@ -31,10 +31,10 @@ const Signin: React.FC<RouteComponentProps> = (props) => {
     const onSubmit = function (event: FormEvent) {
         handleSubmit(event);
     };
-
+/*
     if (user) {
         return <Redirect to="/dashboard"/>
-    }
+    }*/
 
     return (
         <div className="container">

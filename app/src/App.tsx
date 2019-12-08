@@ -5,7 +5,7 @@ import Home from "./Component/home";
 import Signin from "./Component/signin";
 import Dashboard from "./Component/admin/Dashboard";
 import PrivateRoutes from "./Component/authRoutes/PrivateRoutes";
-
+import PubicRoutes from "./Component/authRoutes/PubicRoutes";
 
 const App = () => {
 
@@ -14,9 +14,9 @@ const App = () => {
             <Layout>
                 <Switch>
                     <PrivateRoutes component={Dashboard} path="/dashboard" exact/>
-                    <Route exact component={Signin} path="/signin"/>
-                    <Route exact component={Dashboard} path="/admin"/>
-                    <Route exact component={Home} path="/"/>
+                    <PubicRoutes exact restricted={true} component={Signin} path="/signin"/>
+                    <PubicRoutes exact component={Dashboard} path="/admin"/>
+                    <PubicRoutes exact restricted={false} component={Home} path="/"/>
                 </Switch>
             </Layout>
         </>

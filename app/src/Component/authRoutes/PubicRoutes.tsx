@@ -1,10 +1,13 @@
 import React from 'react';
-import {Redirect, Route} from "react-router";
+import {Redirect, Route, RouteProps} from "react-router";
+import {useSession} from "../../reusableHooks/useSession";
+import {IPublicRoute} from "../../Interfaces";
 
-const PubicRoutes: React.FC<any> = (props) => {
-    const {user, component: Comp, ...rest} = props;
+const PubicRoutes: React.FC<IPublicRoute> = (props) => { //TODO check the props whether it is needed in your case a
+    const {user} = useSession();                                   // and also the route that you will be transferred
+    const {component: Comp, restricted,...rest}:any = props;
     return <Route {...rest} component={(props: any) => (
-        rest.restricted ?
+        restricted ?
             (user ?
                     <Redirect to="/dashboard"/>
                     :
