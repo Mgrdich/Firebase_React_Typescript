@@ -10,20 +10,48 @@ import {firebaseMatches} from "../../../Firebase";
 import {firebaseLooper} from "../../../utilities/funcions";
 import AdminLayout from "../../../HOC/AdminLayout";
 
+function renderTableBody(element: Array<any>): Array<JSX.Element> | null { //TODO make this general
+    if (element.length === 0) {
+        return null;
+    }
+    return element.map((element, index) => {
+        return (
+            <TableRow key={index}>
+                <TableCell>
+                    {element.date}
+                </TableCell>
+                <TableCell>
+                    <Link to={`admin_mathces/edit_match/${element.id}`}>
+                        {element.away} <strong>-</strong> {element.local}
+                    </Link>
+                </TableCell>
+                <TableCell>
+                    {element.resultAway} <strong>-</strong> {element.resultLocal}
+                </TableCell>
+                <TableCell>
+                    {
+                        element.final ==='Yes'?
+                            <span className="matches_tag_red">Final</span>:
+                            <span className="matches_tag_green">Not Played yet</span>
+                    }
+                </TableCell>
+            </TableRow>
+        );
+    })
+}
+
 const AdminMatches = () => {
-    const [loading,setLoading] = useState<boolean>(false);
-    const [mathces,setMatches] = useState<Array<any>>([]);
-    useEffect(()=>{ //TODO in the custom hook do it with the if condition if there is the error for the []
+    const [loading, setLoading] = useState<boolean>(false);
+    const [matches, setMatches] = useState<Array<any>>([]);
+    useEffect(() => { //TODO in the custom hook do it with the if condition if there is the error for the []
         setLoading(true);
-        firebaseMatches.once('value').then(snapshot=>{
+        firebaseMatches.once('value').then(snapshot => {
             const matches = firebaseLooper(snapshot.val());
             setMatches(matches);
             setLoading(false);
         });
-    },[]);
+    }, []);
 
-    console.log("hello");
-    console.log(mathces,loading);
     return (
         <AdminLayout>
             <div>
@@ -38,10 +66,14 @@ const AdminMatches = () => {
                             </TableRow>
                         </TableHead>
                         <TableBody>
+                            {renderTableBody(matches)}
                         </TableBody>
                     </Table>
                 </>
                 <div className="admin_progress">
+                    {
+                        loading ? <CircularProgress thickness={5} style={{color: '#98c5e9'}}/> : null
+                    }
                 </div>
             </div>
         </AdminLayout>

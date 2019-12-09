@@ -1,11 +1,11 @@
 [
   {
     "title": "Matches",
-    "linkTo": "/admin_mathces"
+    "linkTo": "/admin_matches"
   },
   {
     "title": "Add Match",
-    "linkTo": "/admin_mathces/edit_match"
+    "linkTo": "/admin_matches/edit_match"
   },
   {
     "title": "Players",

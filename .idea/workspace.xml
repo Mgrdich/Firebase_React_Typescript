@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/AppAuth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/AppAuth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/JSON/listNav.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/JSON/listNav.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nodejs_Shopping" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -141,7 +140,8 @@
       <workItem from="1575056396137" duration="10000" />
       <workItem from="1575141655262" duration="19149000" />
       <workItem from="1575311910313" duration="2420000" />
-      <workItem from="1575811573302" duration="6734000" />
+      <workItem from="1575811573302" duration="6783000" />
+      <workItem from="1575917064896" duration="2191000" />
     </task>
     <servers />
   </component>
@@ -169,10 +169,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2613" y="346" width="524" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812518268" />
-    <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl" timestamp="1575314328068">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl" timestamp="1575917108360">
+      <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575314328068" />
+    <state x="779" y="287" key="FileChooserDialogImpl/0.0.1920.1052@0.0.1920.1052" timestamp="1575917108360" />
     <state width="498" height="450" key="SwitcherDM" timestamp="1575221778622">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>

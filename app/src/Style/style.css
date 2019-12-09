@@ -664,7 +664,8 @@ footer .footer_discl {
 
 .loadingPage {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  background-color: #98c5e9; }
   .loadingPage .loader {
     position: absolute;
     top: 50%;
