@@ -1,5 +1,5 @@
 import React from 'react';
-import {Redirect, Route, RouteProps} from "react-router";
+import {Redirect, Route} from "react-router";
 import {useSession} from "../../reusableHooks/useSession";
 import {IPublicRoute} from "../../Interfaces";
 

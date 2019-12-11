@@ -4,8 +4,9 @@
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/JSON/listNav.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/JSON/listNav.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Validations/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Validations/validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +51,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nodejs_Shopping" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/app/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -141,7 +142,10 @@
       <workItem from="1575141655262" duration="19149000" />
       <workItem from="1575311910313" duration="2420000" />
       <workItem from="1575811573302" duration="6783000" />
-      <workItem from="1575917064896" duration="2191000" />
+      <workItem from="1575917064896" duration="3140000" />
+      <workItem from="1576001055025" duration="39000" />
+      <workItem from="1576085229733" duration="984000" />
+      <workItem from="1576086808037" duration="1755000" />
     </task>
     <servers />
   </component>
@@ -169,11 +173,15 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2613" y="346" width="524" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812518268" />
-    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl" timestamp="1575917108360">
+    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl" timestamp="1576086212037">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575314328068" />
-    <state x="779" y="287" key="FileChooserDialogImpl/0.0.1920.1052@0.0.1920.1052" timestamp="1575917108360" />
+    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052@0.0.1920.1052" timestamp="1576086212037" />
+    <state x="464" y="161" key="SettingsEditor" timestamp="1576085275258">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="464" y="161" key="SettingsEditor/0.0.1920.1052@0.0.1920.1052" timestamp="1576085275258" />
     <state width="498" height="450" key="SwitcherDM" timestamp="1575221778622">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>
@@ -191,10 +199,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2544" y="247" key="run.anything.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812844538" />
-    <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup" timestamp="1575831511451">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1576086828306">
+      <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575831511451" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575223103112" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1576086828306" />
   </component>
 </project>

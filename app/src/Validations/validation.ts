@@ -1,4 +1,4 @@
-import {email, password} from "../utilities/Objects";  //should be replaced by a general section where it host the is condition for common stuff
+import {email, password} from "../utilities/Objects";  //TODO removing the common stuff from the validation
 
 
 export function emailValidate(values: any) {

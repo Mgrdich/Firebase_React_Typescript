@@ -52,6 +52,7 @@ const AdminMatches = () => {
         });
     }, []);
 
+    console.log(matches,loading);
     return (
         <AdminLayout>
             <div>
