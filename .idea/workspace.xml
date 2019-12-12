@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Validations/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Validations/validation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/AuthFirebase.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +143,8 @@
       <workItem from="1575917064896" duration="3140000" />
       <workItem from="1576001055025" duration="39000" />
       <workItem from="1576085229733" duration="984000" />
-      <workItem from="1576086808037" duration="1755000" />
+      <workItem from="1576086808037" duration="2357000" />
+      <workItem from="1576178046468" duration="768000" />
     </task>
     <servers />
   </component>

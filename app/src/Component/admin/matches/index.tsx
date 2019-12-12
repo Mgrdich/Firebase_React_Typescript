@@ -10,10 +10,14 @@ import {firebaseMatches} from "../../../Firebase";
 import {firebaseLooper} from "../../../utilities/funcions";
 import AdminLayout from "../../../HOC/AdminLayout";
 
-function renderTableBody(element: Array<any>): Array<JSX.Element> | null { //TODO make this general
+function renderTableBody(element: Array<any>): Array<JSX.Element>|JSX.Element  { //TODO make this general
     if (element.length === 0) {
-        return null;
+        return (
+          <>
+          </>
+        )
     }
+
     return element.map((element, index) => {
         return (
             <TableRow key={index}>
@@ -30,8 +34,8 @@ function renderTableBody(element: Array<any>): Array<JSX.Element> | null { //TOD
                 </TableCell>
                 <TableCell>
                     {
-                        element.final ==='Yes'?
-                            <span className="matches_tag_red">Final</span>:
+                        element.final === 'Yes' ?
+                            <span className="matches_tag_red">Final</span> :
                             <span className="matches_tag_green">Not Played yet</span>
                     }
                 </TableCell>
@@ -52,31 +56,33 @@ const AdminMatches = () => {
         });
     }, []);
 
-    console.log(matches,loading);
+
     return (
         <AdminLayout>
-            <div>
-                <>
-                    <Table>
-                        <TableHead>
-                            <TableRow>
-                                <TableCell>Date</TableCell>
-                                <TableCell>Match</TableCell>
-                                <TableCell>Result</TableCell>
-                                <TableCell>Final</TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {renderTableBody(matches)}
-                        </TableBody>
-                    </Table>
-                </>
+            <>
                 <div className="admin_progress">
                     {
                         loading ? <CircularProgress thickness={5} style={{color: '#98c5e9'}}/> : null
                     }
                 </div>
-            </div>
+
+                <Table>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Date</TableCell>
+                            <TableCell>Match</TableCell>
+                            <TableCell>Result</TableCell>
+                            <TableCell>Final</TableCell>
+                        </TableRow>
+                    </TableHead>
+
+                    <TableBody>
+                        {renderTableBody(matches)}
+                    </TableBody>
+
+                </Table>
+
+            </>
         </AdminLayout>
 
     );
