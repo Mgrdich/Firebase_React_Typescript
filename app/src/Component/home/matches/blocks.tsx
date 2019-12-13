@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {firebaseMatches} from "../../../Firebase";
-import {firebaseLooper} from "../../../utilities/funcions";
 import ClipLoader from 'react-spinners/ClipLoader';
 import MathcesBlock from "../../UI/mathces_block";
+import {useFetchFirebase} from "../../../reusableHooks/useFetchFirebase";
 
 const Slide = require('react-reveal/Slide');
 
@@ -22,17 +22,11 @@ const showMatches = function (matches: any): JSX.Element {
 };
 
 const Blocks = () => {
-    const [matches, changeMatches] = useState<Array<any>>([]);
+    const result = useFetchFirebase(firebaseMatches.limitToLast(6));
 
-    useEffect(() => {
-        firebaseMatches.limitToLast(6).once('value').then((snapshot)=>{
-            const matches = firebaseLooper(snapshot.val());
-            changeMatches(matches);
-        })
-    }, []);
     return (
         <div className="home_matches">
-            {(matches.length) ? showMatches(matches) : <ClipLoader color="#0d1831" size={150} sizeUnit="px"/>}
+            {(result.isLoading) ? <ClipLoader color="#0d1831" size={150} sizeUnit="px"/>:showMatches(result.data)}
         </div>
     );
 };

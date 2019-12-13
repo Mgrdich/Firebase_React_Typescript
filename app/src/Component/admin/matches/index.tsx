@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -7,14 +7,14 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import {firebaseMatches} from "../../../Firebase";
-import {firebaseLooper} from "../../../utilities/funcions";
 import AdminLayout from "../../../HOC/AdminLayout";
+import {useFetchFirebase} from "../../../reusableHooks/useFetchFirebase";
 
-function renderTableBody(element: Array<any>): Array<JSX.Element>|JSX.Element  { //TODO make this general
+function renderTableBody(element: Array<any>): Array<JSX.Element> | JSX.Element { //TODO make this general
     if (element.length === 0) {
         return (
-          <>
-          </>
+            <>
+            </>
         )
     }
 
@@ -45,26 +45,11 @@ function renderTableBody(element: Array<any>): Array<JSX.Element>|JSX.Element  {
 }
 
 const AdminMatches = () => {
-    const [loading, setLoading] = useState<boolean>(false);
-    const [matches, setMatches] = useState<Array<any>>([]);
-    useEffect(() => { //TODO in the custom hook do it with the if condition if there is the error for the []
-        setLoading(true);
-        firebaseMatches.once('value').then(snapshot => {
-            const matches = firebaseLooper(snapshot.val());
-            setMatches(matches);
-            setLoading(false);
-        });
-    }, []);
-
+    const data = useFetchFirebase(firebaseMatches);
 
     return (
         <AdminLayout>
             <>
-                <div className="admin_progress">
-                    {
-                        loading ? <CircularProgress thickness={5} style={{color: '#98c5e9'}}/> : null
-                    }
-                </div>
 
                 <Table>
                     <TableHead>
@@ -77,10 +62,17 @@ const AdminMatches = () => {
                     </TableHead>
 
                     <TableBody>
-                        {renderTableBody(matches)}
+                        {renderTableBody(data.data)}
                     </TableBody>
 
+
                 </Table>
+                <div className="admin_progress">
+                    {
+                        data.isLoading ? <CircularProgress thickness={5} style={{color: '#98c5e9',margin:'0 auto'}} /> : null
+                    }
+                </div>
+
 
             </>
         </AdminLayout>
