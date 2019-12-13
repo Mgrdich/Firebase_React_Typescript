@@ -5,13 +5,11 @@ import {signinValidation} from "../../Validations/signinValidation";
 import {email, password} from "../../utilities/Objects";
 import {firebase} from "../../Firebase";
 import  {RouteComponentProps} from "react-router";
-import {useSession} from "../../reusableHooks/useSession";
 import {useEffectIf} from "../../reusableHooks/UseEffectIf";
 
 
 const Signin: React.FC<RouteComponentProps> = (props) => {
     const {handleChange, handleSubmit, values, errors, validForm} = useForm(signinValidation);
-    const {user} = useSession();
     const [formError, changeFormError] = useState<boolean>(false);
     let input1Name: string = email.config.name;
     let input2Name: string = password.config.name;
@@ -31,11 +29,6 @@ const Signin: React.FC<RouteComponentProps> = (props) => {
     const onSubmit = function (event: FormEvent) {
         handleSubmit(event);
     };
-/*
-    if (user) {
-        return <Redirect to="/dashboard"/>
-    }*/
-
     return (
         <div className="container">
             <div className="signin_wrapper" style={{margin: "100px"}}>

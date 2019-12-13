@@ -4,5 +4,5 @@ export function useEffectIf(callback: Function, condition: boolean, dependency: 
     //TODO:make the callback cacheable
     useEffect(() => {
         condition && callback();
-    }, [...dependency]);
+    }, [...dependency,condition]);
 }

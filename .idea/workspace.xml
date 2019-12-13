@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/signin/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Validations/homeValidation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Validations/homeValidation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Validations/signinValidation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Validations/signinValidation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Validations/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Validations/validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/UseEffectIf.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseEffectIf.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +147,8 @@
       <workItem from="1576001055025" duration="39000" />
       <workItem from="1576085229733" duration="984000" />
       <workItem from="1576086808037" duration="2357000" />
-      <workItem from="1576178046468" duration="768000" />
+      <workItem from="1576178046468" duration="1363000" />
+      <workItem from="1576256754222" duration="1548000" />
     </task>
     <servers />
   </component>
@@ -194,14 +198,15 @@
     </state>
     <state x="2556" y="274" width="647" height="532" key="find.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575832221216" />
     <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575213881966" />
-    <state x="2544" y="247" key="run.anything.popup" timestamp="1575812844538">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="624" y="241" key="run.anything.popup" timestamp="1576258080751">
+      <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="2544" y="247" key="run.anything.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812844538" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1576086828306">
+    <state x="624" y="241" key="run.anything.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1576258080751" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1576179261936">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="2543" y="238" width="672" height="697" key="search.everywhere.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575831511451" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1576086828306" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1576179261936" />
   </component>
 </project>
