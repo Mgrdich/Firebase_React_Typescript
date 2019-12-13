@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/reusableHooks/useFetchFirebase.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/matches/blocks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/matches/blocks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Validations/signinValidation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Validations/signinValidation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/UseEffectIf.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseEffectIf.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +145,7 @@
       <workItem from="1576085229733" duration="984000" />
       <workItem from="1576086808037" duration="2357000" />
       <workItem from="1576178046468" duration="1363000" />
-      <workItem from="1576256754222" duration="4445000" />
+      <workItem from="1576256754222" duration="5187000" />
     </task>
     <servers />
   </component>
@@ -194,11 +190,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2449" y="159" width="923" height="754" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575829211725" />
-    <state x="2556" y="274" width="647" height="532" key="find.popup" timestamp="1575832221216">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="636" y="267" width="647" height="518" key="find.popup" timestamp="1576262304092">
+      <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="2556" y="274" width="647" height="532" key="find.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575832221216" />
-    <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1575213881966" />
+    <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1576262304091" />
     <state x="624" y="241" key="run.anything.popup" timestamp="1576258080751">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>

@@ -4,6 +4,7 @@ import {useForm} from "../../../reusableHooks/UseForm";
 import {homeValidation} from "../../../Validations/homeValidation";
 import {email} from "../../../utilities/Objects";
 import {firebasePromotion} from "../../../Firebase";
+import {useEffectIf} from "../../../reusableHooks/UseEffectIf";
 
 const Fade = require("react-reveal/Fade");
 
@@ -13,20 +14,19 @@ const Enroll = () => {
     const {handleChange, handleSubmit, values, errors, submitted, validForm} = useForm(homeValidation);
     const [emailInDatabase, changeEmailInDatabase] = useState<boolean|null>(null);
 
-    useEffect(() => { //TODO custom fetching for Database hook or replave it with useEffectIf hook
-        if (validForm) {
-            firebasePromotion.orderByChild('email').equalTo(values[input1Name]).once("value")
-                .then((snapshot: any) => {
-                    if (snapshot.val() === null) { //not found in the data base
-                        resetSuccess(true);
-                        firebasePromotion.push(values).then(() => {
-                        });
-                        return;
-                    }
-                    resetSuccess(false);
-                });
-        }
-    });
+    useEffectIf(()=>{
+        firebasePromotion.orderByChild('email').equalTo(values[input1Name]).once("value")
+            .then((snapshot: any) => {
+                if (snapshot.val() === null) { //not found in the data base
+                    resetSuccess(true);
+                    firebasePromotion.push(values).then(() => {
+                    });
+                    return;
+                }
+                resetSuccess(false);
+            });
+    },validForm,[validForm]);
+
 
     const resetSuccess = useCallback((emailChecking: boolean) => {
         changeEmailInDatabase(emailChecking);
@@ -34,7 +34,7 @@ const Enroll = () => {
 
     const errorMessageJSX = useCallback(() => {
         let labelText:string= '';
-        if(emailInDatabase){ //TODO make this a function pure fo if true else fasle
+        if(emailInDatabase){ //TODO make this a function pure fo if true else false
             labelText = "Congrats";
         } else if(emailInDatabase===false) {
             labelText = "Already in Database"
