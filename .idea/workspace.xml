@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/home/promotion/Enroll.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/reusableHooks/UseEffectIf.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/reusableHooks/UseEffectIf.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,7 +161,8 @@
       <workItem from="1576085229733" duration="984000" />
       <workItem from="1576086808037" duration="2357000" />
       <workItem from="1576178046468" duration="1363000" />
-      <workItem from="1576256754222" duration="5187000" />
+      <workItem from="1576256754222" duration="5437000" />
+      <workItem from="1576870180137" duration="710000" />
     </task>
     <servers />
   </component>
@@ -173,11 +190,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2613" y="346" width="524" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812518268" />
-    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl" timestamp="1576086212037">
+    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl" timestamp="1576262603455">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575314328068" />
-    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052@0.0.1920.1052" timestamp="1576086212037" />
+    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052@0.0.1920.1052" timestamp="1576262603455" />
     <state x="464" y="161" key="SettingsEditor" timestamp="1576085275258">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>
@@ -190,11 +207,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2449" y="159" width="923" height="754" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575829211725" />
-    <state x="636" y="267" width="647" height="518" key="find.popup" timestamp="1576262304092">
+    <state x="636" y="267" width="647" height="518" key="find.popup" timestamp="1576870676490">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="2556" y="274" width="647" height="532" key="find.popup/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575832221216" />
-    <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1576262304091" />
+    <state x="636" y="267" width="647" height="518" key="find.popup/0.0.1920.1052@0.0.1920.1052" timestamp="1576870676490" />
     <state x="624" y="241" key="run.anything.popup" timestamp="1576258080751">
       <screen x="0" y="0" width="1920" height="1052" />
     </state>

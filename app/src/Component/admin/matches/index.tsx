@@ -10,7 +10,7 @@ import {firebaseMatches} from "../../../Firebase";
 import AdminLayout from "../../../HOC/AdminLayout";
 import {useFetchFirebase} from "../../../reusableHooks/useFetchFirebase";
 
-function renderTableBody(element: Array<any>): Array<JSX.Element> | JSX.Element { //TODO make this general
+function renderTableBody(element: Array<any>): Array<JSX.Element> | JSX.Element {
     if (element.length === 0) {
         return (
             <>

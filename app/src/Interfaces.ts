@@ -102,6 +102,7 @@ export interface IAdminLayout extends ReactChildren {
 
 export interface IPublicRoute extends RouteProps {
     restricted?:boolean;
+    propsComp?:any
 }
 
 
