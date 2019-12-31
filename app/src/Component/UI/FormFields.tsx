@@ -1,13 +1,16 @@
 import React from 'react';
 import {IFormFields} from "../../Interfaces";
 
-function renderTemplate(obj:IFormFields) {
+function renderTemplate(obj: IFormFields) {
     let formTemplate: JSX.Element | null = null;
-    let {formDataConfig, change, value, error, id} = obj;
+    let {formDataConfig, change, value, error, id, label} = obj;
     switch (formDataConfig.element) {
         case ("input"): {
             formTemplate = (
                 <>
+                    {
+                        label ? <div className="label_inputs">{label}</div> : null
+                    }
                     <input
                         {...formDataConfig.config}
                         value={value}
@@ -27,7 +30,7 @@ function renderTemplate(obj:IFormFields) {
     return formTemplate;
 }
 
-const FormFields: React.FC<IFormFields> = (props): JSX.Element => {
+const FormFields: React.FC<IFormFields> = (props) => {
 
     return (
         <>

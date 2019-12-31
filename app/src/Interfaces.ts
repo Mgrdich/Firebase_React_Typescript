@@ -82,6 +82,7 @@ export interface IFormFields {
     value: string;
     error?: any;
     submitted?: boolean;
+    label?:boolean;
 }
 
 export interface IInputInfo {

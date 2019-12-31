@@ -8,6 +8,7 @@ const PubicRoutes: React.FC<IPublicRoute> = (props) => {
     const {component: Comp, restricted, propsComp, ...rest}: any = props;
     const componentProp = propsComp ? propsComp : null;
     return <Route {...rest} component={(props: any) => (
+        //TODO check this props 
         restricted ?
             (user ?
                     <Redirect to="/dashboard"/>

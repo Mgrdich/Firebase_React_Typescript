@@ -7,7 +7,7 @@ const PrivateRoutes: React.FC<RouteProps> = (props) => {
     const { component: Comp,propsComp, ...rest}: any = props;
     const componentProp = propsComp ? propsComp : null;
     return (
-        <Route {...rest} render={(props: any) => (
+        <Route {...rest} render={() => (
             (user) ?
                 <Comp {...componentProp} user={user}/>
                 :

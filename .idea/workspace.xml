@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22540bae-4050-4470-861c-6bb758cb634c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/addEditMatch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Component/UI/FormFields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/UI/FormFields.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/admin/matches/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PrivateRoutes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Component/authRoutes/PubicRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Interfaces.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +164,9 @@
       <workItem from="1576086808037" duration="2357000" />
       <workItem from="1576178046468" duration="1363000" />
       <workItem from="1576256754222" duration="5437000" />
-      <workItem from="1576870180137" duration="710000" />
+      <workItem from="1576870180137" duration="1379000" />
+      <workItem from="1576944933228" duration="469000" />
+      <workItem from="1577789571229" duration="907000" />
     </task>
     <servers />
   </component>
@@ -190,10 +194,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2613" y="346" width="524" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575812518268" />
-    <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl" timestamp="1576262603455">
-      <screen x="0" y="0" width="1920" height="1052" />
+    <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl" timestamp="1576945400072">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1575314328068" />
+    <state x="2699" y="295" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576945400072" />
     <state x="779" y="287" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1052@0.0.1920.1052" timestamp="1576262603455" />
     <state x="464" y="161" key="SettingsEditor" timestamp="1576085275258">
       <screen x="0" y="0" width="1920" height="1052" />

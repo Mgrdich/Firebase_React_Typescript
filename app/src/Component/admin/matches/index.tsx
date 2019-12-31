@@ -49,32 +49,28 @@ const AdminMatches = () => {
 
     return (
         <AdminLayout>
-            <>
+            <Table>
+                <TableHead>
+                    <TableRow>
+                        <TableCell>Date</TableCell>
+                        <TableCell>Match</TableCell>
+                        <TableCell>Result</TableCell>
+                        <TableCell>Final</TableCell>
+                    </TableRow>
+                </TableHead>
 
-                <Table>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Date</TableCell>
-                            <TableCell>Match</TableCell>
-                            <TableCell>Result</TableCell>
-                            <TableCell>Final</TableCell>
-                        </TableRow>
-                    </TableHead>
-
-                    <TableBody>
-                        {renderTableBody(data.data)}
-                    </TableBody>
+                <TableBody>
+                    {renderTableBody(data.data)}
+                </TableBody>
 
 
-                </Table>
-                <div className="admin_progress">
-                    {
-                        data.isLoading ? <CircularProgress thickness={5} style={{color: '#98c5e9',margin:'0 auto'}} /> : null
-                    }
-                </div>
-
-
-            </>
+            </Table>
+            <div className="admin_progress">
+                {
+                    data.isLoading ?
+                        <CircularProgress thickness={5} style={{color: '#98c5e9', margin: '0 auto'}}/> : null
+                }
+            </div>
         </AdminLayout>
 
     );
