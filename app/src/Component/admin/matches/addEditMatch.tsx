@@ -5,7 +5,21 @@ import FormFields from "../../UI/FormFields";
 const AddEditMatch = () => {
     return (
         <AdminLayout>
-            
+            <div className="editmatch_dialog_wrapper">
+                <h2>
+
+                </h2>
+                <div>
+                    <form>
+
+                    </form>
+                </div>
+
+
+            </div>
+
+
+
         </AdminLayout>
     );
 };
